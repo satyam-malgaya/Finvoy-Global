@@ -1,9 +1,9 @@
 import React from 'react'
-import allroutes from './Routes/allroutes'
+import Allroutes from './Routes/allroutes'
 const App = () => {
   return (
     <div>
-      
+      <Allroutes/>
     </div>
   )
 }
