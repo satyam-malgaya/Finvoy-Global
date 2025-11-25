@@ -7,7 +7,7 @@ const Navbar = () => {
     
       <nav className={styles.navbar}>
         <div>
-           <img className={styles.logo} src={logo} alt="Sorry the logo was not show" />
+           <img className="w-20 h-[20vh] bg-amber-500" src={logo} alt="Sorry the logo was not show" />
         </div>
        <div className={styles.navlinks}>
        <NavLink className='navli' to="/">Home</NavLink>
