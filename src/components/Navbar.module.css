@@ -1,0 +1,65 @@
+.navlink {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 490;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #170C52;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.navlink:hover {
+    color: #170C52;
+}
+
+.navlink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#navbtn {
+    position: relative;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 490;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+#navbtn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #170C52;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+#navbtn:hover {
+    background: #170C52;
+}
+
+#navbtn:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
