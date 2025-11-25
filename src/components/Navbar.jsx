@@ -18,12 +18,13 @@ const Navbar = () => {
        <NavLink className={styles.navlink} to="/loan-calculator">Loan Calculator</NavLink>
        <NavLink className={styles.navlink} to="/careers">Careers</NavLink>
        </div>
-       <div className="flex flex-row gap-4">
-         <button onClick={()=>{
-               
-         }} className="px-[12px] py-[11px] rounded-full bg-[#170C52] text-white "><IoMdSearch className="text-[18px] hover:text-[20px]" /></button>
+       <div className="flex flex-row gap-2">
+         <div className="flex items-center ">
+            <input className="px-[12px] w-65 py-[8px] rounded-full transform transition duration-200 ease-out hover:-translate-y-0.5 bg-[#170C52] text-white  placeholder:text-white" type="search" placeholder="Search..." />
+            <IoMdSearch className="text-[23px] relative right-10  text-white"/>
+         </div>
          <button 
-         className=" px-5 py-2  rounded-lg text-center border-1 bg-[#170C52] text-white font-medium">LogIn</button>
+         className=" px-5 py-2  rounded-lg text-center border-1 bg-[#170C52] transform transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">LogIn</button>
        </div>
       </nav>
 
