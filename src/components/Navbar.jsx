@@ -1,21 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
+import logo from "/main-logo.jpg"
 const Navbar = () => {
   return (
-    <div>
-       <nav className="navbar"> 
-        
-       </nav>
-    </div>
-  )
-}
+    
+      <nav className={styles.navbar}>
+        <div>
+           <img className={styles.logo} src={logo} alt="Sorry the logo was not show" />
+        </div>
+       <div className={styles.navlinks}>
+       <NavLink className='navli' to="/">Home</NavLink>
+       <NavLink className='navli' to="/about">About</NavLink>
+       <NavLink className='navli' to="/contact">Contact</NavLink>
+       <NavLink className='navli' to="/loan-calculator">Loan Calculator</NavLink>
+       <NavLink className='navli' to="/careers">Careers</NavLink>
 
-export default Navbar
+       </div>
+      </nav>
 
-{/* <ul className="nav-links">
-<li><NavLink to="/">Home</NavLink></li>
-<li><NavLink to="/about">About</NavLink></li>
-<li><NavLink to="/contact">Contact</NavLink></li>
-<li><NavLink to="/loan-calculator">Loan Calculator</NavLink></li>
-<li><NavLink to="/careers">Careers</NavLink></li>
-</ul> */}
+  );
+};
+
+export default Navbar;
