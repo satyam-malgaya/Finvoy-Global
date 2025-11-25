@@ -5,9 +5,9 @@ import logo from "/main-logo.jpg"
 const Navbar = () => {
   return (
     
-      <nav className={styles.navbar}>
+      <nav className='w-full h-20 border-1 border-black flex '>
         <div>
-           <img className="w-20 h-[20vh] bg-amber-500" src={logo} alt="Sorry the logo was not show" />
+           <img className="w-23 h-[15vh]  bg-amber-500" src={logo} alt="Sorry the logo was not show" />
         </div>
        <div className={styles.navlinks}>
        <NavLink className='navli' to="/">Home</NavLink>
@@ -15,7 +15,6 @@ const Navbar = () => {
        <NavLink className='navli' to="/contact">Contact</NavLink>
        <NavLink className='navli' to="/loan-calculator">Loan Calculator</NavLink>
        <NavLink className='navli' to="/careers">Careers</NavLink>
-
        </div>
       </nav>
 
