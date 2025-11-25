@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
+import logo from "/logo.png"
 
-function footer() {
+import { NavLink } from "react-router-dom";
+function Footer() {
     return (
         <div>
             <div>
@@ -97,3 +99,5 @@ function footer() {
         </div>
     )
 }
+
+export default Footer

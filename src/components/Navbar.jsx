@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { IoMdSearch } from "react-icons/io";
-import logo from "/logo.png"
+import logo from "/logo.png";
 import { useState } from "react";
 const Navbar = () => {
     const [search, setsearch] = useState(false)
