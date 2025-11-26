@@ -1,27 +1,39 @@
 import React from 'react';
 import logo from "/logo.png"
-
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import { MdEmail } from "react-icons/md";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+
 function Footer() {
     return (
-        <div>
-            <div>
+        <div className="flex flex-col">
+        <div class="flex gap-x-20 justify-center">
+            <div className=" flex flex-col  gap-3 ">
                 <NavLink to="/">
-                    <img src={logo} className="h-12 w-34 " />
+                <img className="w-39 h-[20vh]" src={logo} alt="Sorry the logo was not show" />
                 </NavLink>
-                <NavLink to="/">
-                    <p>123 First Floor, Apollo Square, Janjeerwala Square, Race Course Road, Indore, Madhya Pradesh - 452002 </p>
+                <NavLink to="/" className="flex">
+                  <FaLocationDot className="text-red-600 text-x mt-1" />
+                    <p>123 First Floor, Apollo Square,<br/> Janjeerwala Square, Race Course <br/> Road, Indore, Madhya Pradesh -<br/> 452002 </p>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="/" className="flex">
+                    <FaPhone className="text-blue-600 text-x mt-1 " />
                     <p>+91 7000332180, 0731 4981501</p>
                 </NavLink>
-                <NavLink to="/">
+                <NavLink to="/" className="flex gap-1">
+                    <MdEmail className="text-red-600 text-x mt-1" />
                     <p>vinayakafinserv123@gmail.com</p>
                 </NavLink>
+                <NavLink to="/" className="flex gap-2 mt-2">
+                    <FaFacebookF className="text-blue-600 text-5xl hover:text-blue-700" />
+                    <FaInstagram className="text-pink-600 text-5xl hover:text-pink-700" />
+                </NavLink>
             </div>
-            <div>
+            <div className=" flex flex-col  gap-2">
                 <NavLink to="/">
-                    <p>Supports</p>
+                    <p className="font-semibold uppercase">Supports</p>
                 </NavLink>
                 <NavLink to="/">
                     <p>About</p>
@@ -33,9 +45,9 @@ function Footer() {
                     <p>Contact Us</p>
                 </NavLink>
             </div>
-            <div>
+            <div className=" flex flex-col  gap-2">
                 <NavLink to="/">
-                    <p>Services</p>
+                    <p className="font-semibold uppercase">Services</p>
                 </NavLink>
                 <NavLink to="/">
                     <p>MSME Loan</p>
@@ -65,9 +77,9 @@ function Footer() {
                     <p>Personal Loan</p>
                 </NavLink>
             </div>
-            <div>
+            <div className=" flex flex-col  gap-2">
                 <NavLink to="/">
-                    <p>Company</p>
+                    <p className="font-semibold uppercase">COMPANY</p>
                 </NavLink>
                 <NavLink to="/">
                     <p>About</p>
@@ -79,21 +91,20 @@ function Footer() {
                     <p>EMI Calculator</p>
                 </NavLink>
             </div>
-            <div>
+            <div className=" flex flex-col  gap-2">
                 <NavLink to="/">
-                    <p>Join Us on WhatsApp</p>
+                    <p className="font-semibold uppercase">Join Us on WhatsApp</p>
                 </NavLink>
                 <NavLink to="/">
-                    <p>Receive updates, hot deals, discounts get straignt in your WhatsApp daily</p>
+                    <p>Receive updates, hot deals, <br/>discounts get straignt in your <br/>WhatsApp daily</p>
                 </NavLink>
-                <NavLink to="/">
-                    <img src="" />
+                <NavLink to="/" className="mt-5">
+                    <img  className="w-30 h-[30vh]" src="https://www.vinayakafinserv.com/static/assets/img/whatsapp.png" />
                 </NavLink>
             </div>
-            <div>
-
-            </div>
-            <p>
+        </div>
+            <div class="border-b border-gray-500 mt-20"></div>
+            <p class="text-center mt-4">
                 © 2025 Vinayaka Finserv | All Rights Reserved.
             </p>
         </div>
