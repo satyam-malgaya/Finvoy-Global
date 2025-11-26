@@ -6,7 +6,9 @@ import OurOfferings from "../components/OurOfferings";
 import img1 from "../assets/m-1.avif";
 import img2 from "../assets/m-2.avif";
 import img3 from "../assets/m-3.avif";
-
+import EasyLoans from "../components/EasyLoans";
+import LoanProcess from "../components/LoanProcess";
+import BankSlider from "../components/bankSlider";
 const slides = [
   { url: img1, title: "Affordable Home Loans", subtitle: "Low interest rates" },
   { url: img2, title: "Quick Approval", subtitle: "Fast and simple" },
@@ -30,6 +32,18 @@ const Home = () => {
       {/* section-4......... */}
       <div>
         <OurOfferings/>
+      </div>
+      {/* section-5............ */}
+      <div>
+          <EasyLoans/>
+      </div>
+      {/* sections-6....... */}
+      <div>
+         <LoanProcess/>
+      </div>
+      {/* section-7................. */}
+      <div>
+           <BankSlider/>
       </div>
     </div>
   );
