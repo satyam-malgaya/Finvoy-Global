@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
       <nav className='w-full h-20 shadow-2xl justify-between flex items-center px-5 relative'>
         <div>
-           <img className="w-23 h-[15vh] max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
+           <img className="w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
         </div>
        <div className='hidden md:flex flex-row gap-10 text-[18px]'>
        <NavLink className={styles.navlink} to="/">Home</NavLink>
