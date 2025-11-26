@@ -10,7 +10,7 @@ function Footer() {
         <div className="flex flex-col bg-white py-10">
 
             {/* MAIN FOOTER GRID */}
-            <div className="grid px-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-16 justify-center">
+            <div className="grid px-40 grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 sm:gap-16 justify-center">
 
                 {/* COLUMN 1 */}
                 <div className="flex flex-col gap-3">
