@@ -8,30 +8,30 @@ import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className="flex flex-col">
-        <div class="flex gap-x-20 justify-center">
-            <div className=" flex flex-col  gap-3 ">
+        <div className="flex flex-col bg-white px-4 py-10">
+        <div className="flex flex-col gap-10 md:flex-row md:flex-wrap md:gap-x-16 md:justify-center max-w-6xl w-full mx-auto">
+            <div className=" flex flex-col gap-3 items-center md:items-start text-center md:text-left">
                 <NavLink to="/">
-                <img className="w-39 h-[20vh]" src={logo} alt="Sorry the logo was not show" />
+                <img className="w-40 h-auto" src={logo} alt="Sorry the logo was not show" />
                 </NavLink>
-                <NavLink to="/" className="flex">
-                  <FaLocationDot className="text-red-600 text-x mt-1" />
+                <NavLink to="/" className="flex items-start gap-2">
+                  <FaLocationDot className="text-red-600 text-xl mt-1" />
                     <p>123 First Floor, Apollo Square,<br/> Janjeerwala Square, Race Course <br/> Road, Indore, Madhya Pradesh -<br/> 452002 </p>
                 </NavLink>
-                <NavLink to="/" className="flex">
-                    <FaPhone className="text-blue-600 text-x mt-1 " />
+                <NavLink to="/" className="flex items-center gap-2">
+                    <FaPhone className="text-blue-600 text-xl mt-1 " />
                     <p>+91 7000332180, 0731 4981501</p>
                 </NavLink>
-                <NavLink to="/" className="flex gap-1">
-                    <MdEmail className="text-red-600 text-x mt-1" />
+                <NavLink to="/" className="flex items-center gap-2">
+                    <MdEmail className="text-red-600 text-xl mt-1" />
                     <p>vinayakafinserv123@gmail.com</p>
                 </NavLink>
-                <NavLink to="/" className="flex gap-2 mt-2">
-                    <FaFacebookF className="text-blue-600 text-5xl hover:text-blue-700" />
-                    <FaInstagram className="text-pink-600 text-5xl hover:text-pink-700" />
+                <NavLink to="/" className="flex gap-4 mt-2">
+                    <FaFacebookF className="text-blue-600 text-3xl hover:text-blue-700" />
+                    <FaInstagram className="text-pink-600 text-3xl hover:text-pink-700" />
                 </NavLink>
             </div>
-            <div className=" flex flex-col  gap-2">
+            <div className=" flex flex-col  gap-2 text-center md:text-left">
                 <NavLink to="/">
                     <p className="font-semibold uppercase">Supports</p>
                 </NavLink>
@@ -45,7 +45,7 @@ function Footer() {
                     <p>Contact Us</p>
                 </NavLink>
             </div>
-            <div className=" flex flex-col  gap-2">
+            <div className=" flex flex-col  gap-2 text-center md:text-left">
                 <NavLink to="/">
                     <p className="font-semibold uppercase">Services</p>
                 </NavLink>
@@ -77,7 +77,7 @@ function Footer() {
                     <p>Personal Loan</p>
                 </NavLink>
             </div>
-            <div className=" flex flex-col  gap-2">
+            <div className=" flex flex-col  gap-2 text-center md:text-left">
                 <NavLink to="/">
                     <p className="font-semibold uppercase">COMPANY</p>
                 </NavLink>
@@ -91,7 +91,7 @@ function Footer() {
                     <p>EMI Calculator</p>
                 </NavLink>
             </div>
-            <div className=" flex flex-col  gap-2">
+            <div className=" flex flex-col  gap-2 text-center md:text-left items-center md:items-start">
                 <NavLink to="/">
                     <p className="font-semibold uppercase">Join Us on WhatsApp</p>
                 </NavLink>
@@ -99,12 +99,12 @@ function Footer() {
                     <p>Receive updates, hot deals, <br/>discounts get straignt in your <br/>WhatsApp daily</p>
                 </NavLink>
                 <NavLink to="/" className="mt-5">
-                    <img  className="w-30 h-[30vh]" src="https://www.vinayakafinserv.com/static/assets/img/whatsapp.png" />
+                    <img  className="w-32 h-auto" src="https://www.vinayakafinserv.com/static/assets/img/whatsapp.png" />
                 </NavLink>
             </div>
         </div>
-            <div class="border-b border-gray-500 mt-20"></div>
-            <p class="text-center mt-4">
+            <div className="border-b border-gray-500 mt-12"></div>
+            <p className="text-center mt-4 text-sm md:text-base">
                 © 2025 Vinayaka Finserv | All Rights Reserved.
             </p>
         </div>
