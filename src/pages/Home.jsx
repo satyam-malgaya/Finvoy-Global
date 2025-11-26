@@ -1,10 +1,8 @@
 import React from "react";
 import HomeSlider from "../components/Homeslider";
 import Mapp from "../components/mapp";
-
 import OurProduct from "../components/OurProduct";
-
-
+import OurOfferings from "../components/OurOfferings";
 import img1 from "../assets/m-1.avif";
 import img2 from "../assets/m-2.avif";
 import img3 from "../assets/m-3.avif";
@@ -28,6 +26,10 @@ const Home = () => {
       {/* section-3............ */}
       <div>
          <OurProduct/>
+      </div>
+      {/* section-4......... */}
+      <div>
+        <OurOfferings/>
       </div>
     </div>
   );
