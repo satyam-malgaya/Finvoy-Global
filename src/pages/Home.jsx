@@ -1,6 +1,8 @@
 import React from "react";
 import HomeSlider from "../components/Homeslider";
 import Mapp from "../components/mapp";
+import OurProduct from "../components/OurProduct";
+
 const Home = () => {
   return (
     <div>
@@ -12,8 +14,8 @@ const Home = () => {
             <Mapp/>
        </div>
       {/* section-3............ */}
-      <div className="">
-
+      <div>
+         <OurProduct/>
       </div>
     </div>
   );

@@ -1,0 +1,103 @@
+{
+    "loanProducts": [{
+            "title": "Home Loan",
+            "image": "Home-Loan.jpg",
+            "shortDescription": "Buy or build your dream home with Vinayaka Finserv’s Home Loan.",
+            "details": "Borrow from ₹5 Lakhs to ₹5 Crores with long-term flexible repayment options.",
+            "buttons": {
+                "knowMore": "/properties/home-loan",
+                "applyNow": "/apply/home-loan"
+            }
+        },
+        {
+            "title": "Personal Loan",
+            "image": "Personal-Loans.jpg",
+            "shortDescription": "Quick and easy Personal Loans for your immediate financial needs.",
+            "details": "Borrow from ₹50,000 to ₹25 Lakhs with minimal documentation.",
+            "buttons": {
+                "knowMore": "/properties/personal-loan",
+                "applyNow": "/apply/personal-loan"
+            }
+        },
+        {
+            "title": "Education Loan",
+            "image": "student loan.webp",
+            "shortDescription": "Finance your higher studies in India or abroad with our Education Loan.",
+            "details": "Borrow from ₹1 Lakh to ₹40 Lakhs with student-friendly repayment plans.",
+            "buttons": {
+                "knowMore": "/properties/education-loan",
+                "applyNow": "/apply/education-loan"
+            }
+        },
+        {
+            "title": "Vehicle Loan",
+            "image": "Car-loan.jpg",
+            "shortDescription": "Get easy loans for purchasing two-wheelers, cars, or commercial vehicles.",
+            "details": "Borrow from ₹1 Lakh to ₹50 Lakhs with competitive interest rates.",
+            "buttons": {
+                "knowMore": "/properties/vehicle-loan",
+                "applyNow": "/apply/vehicle-loan"
+            }
+        },
+        {
+            "title": "Loan Against Property (LAP)",
+            "image": "loanAgainst.jpg",
+            "shortDescription": "Unlock the value of your property to get funds for any purpose.",
+            "details": "Borrow from ₹5 Lakhs to ₹10 Crores by mortgaging residential or commercial property.",
+            "buttons": {
+                "knowMore": "/properties/lap-loan",
+                "applyNow": "/apply/lap-loan"
+            }
+        },
+        {
+            "title": "Gold Loan",
+            "image": "Goldloan.jpg",
+            "shortDescription": "Instant Gold Loans with high value for your gold ornaments.",
+            "details": "Borrow from ₹10,000 to ₹50 Lakhs at low-interest rates with quick processing.",
+            "buttons": {
+                "knowMore": "/properties/gold-loan",
+                "applyNow": "/apply/gold-loan"
+            }
+        },
+        {
+            "title": "Business Loan / MSME Loan",
+            "image": "businessloan.webp",
+            "shortDescription": "Grow and expand your business with our Business/MSME Loan.",
+            "details": "Borrow from ₹2 Lakhs to ₹2 Crores with flexible repayment and low paperwork.",
+            "buttons": {
+                "knowMore": "/properties/msme-loan",
+                "applyNow": "/apply/msme-loan"
+            }
+        },
+        {
+            "title": "Agriculture Loan (KCC / Crop Loan)",
+            "image": "AgricultureLoansBlog.avif",
+            "shortDescription": "Loans for farmers to manage crop production and seasonal expenses.",
+            "details": "Borrow from ₹25,000 to ₹10 Lakhs with subsidized interest rates.",
+            "buttons": {
+                "knowMore": "/properties/agriculture-loan",
+                "applyNow": "/apply/agriculture-loan"
+            }
+        },
+        {
+            "title": "Top-up Loan",
+            "image": "top-uploan.jpg",
+            "shortDescription": "Get additional funds on your existing loan through our Top-up facility.",
+            "details": "Borrow extra amounts based on your repayment history and existing loan eligibility.",
+            "buttons": {
+                "knowMore": "/properties/topup-loan",
+                "applyNow": "/apply/topup-loan"
+            }
+        },
+        {
+            "title": "Balance Transfer Loan",
+            "image": "Balance Transfer Loan.jpg",
+            "shortDescription": "Reduce your EMI by transferring your existing loan to Vinayaka Finserv.",
+            "details": "Transfer loans up to ₹2 Crores with lower EMIs and better interest rates.",
+            "buttons": {
+                "knowMore": "/properties/balance-transfer",
+                "applyNow": "/apply/balance-transfer"
+            }
+        }
+    ]
+}

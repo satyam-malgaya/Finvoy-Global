@@ -18,7 +18,7 @@ const slides = [
 
 export default function HomeSlider({height='75vh'}) {
   return (
-    <div className="w-full" style={{ height }}>
+  <div className="w-full" style={{ height }}>
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
       autoplay={{ delay: 3500 }}
@@ -31,10 +31,10 @@ export default function HomeSlider({height='75vh'}) {
       {slides.map((s, i) => (
         <SwiperSlide key={i}>
           <div
-            className="w-full bg-cover bg-center flex items-center justify-start p-10"
+            className="w-full bg-cover bg-center flex items-center justify-start px-6 py-16 md:px-10"
             style={{ backgroundImage: `url(${s.url})`, height }}
           >
-            <h2 className="text-4xl font-bold text-white drop-shadow-lg">
+            <h2 className="text-3xl font-bold text-white drop-shadow-lg sm:text-4xl md:text-5xl">
               {s.title}
             </h2>
           </div>
