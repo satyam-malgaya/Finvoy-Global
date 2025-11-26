@@ -5,6 +5,7 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import LoanCalculator from '../pages/LoanCalculator'
 import Careers from '../pages/Careers'
+import LoanDetails from '../pages/LoanDetails'
 const Allroutes = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const Allroutes = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/loan-calculator" element={<LoanCalculator />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/loan/:loanId" element={<LoanDetails />} />
       </Routes>
     </div>
   )

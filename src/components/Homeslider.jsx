@@ -18,7 +18,7 @@ export default function HomeSlider({ slide = [], height = "75vh" }) {
       slidesPerView={1}
       className="h-full"
     >
-      {slides.map((s, i) => (
+      {slide.map((s, i) => (
         <SwiperSlide key={i}>
           <div
             className="w-full bg-cover bg-center flex items-center justify-start p-10"
