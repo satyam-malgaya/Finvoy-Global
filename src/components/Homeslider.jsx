@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function HomeSlider({ slide = [], height = "75vh" }) {
+export default function HomeSlider({ slide = [], }) {
   return (
-    <div className="w-full" style={{ height }}>
+    <div className="w-full">
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
       autoplay={{ delay: 3500 }}
@@ -21,10 +21,30 @@ export default function HomeSlider({ slide = [], height = "75vh" }) {
       {slide.map((s, i) => (
         <SwiperSlide key={i}>
           <div
-            className="w-full bg-cover bg-center flex items-center justify-start p-10"
-            style={{ backgroundImage: `url(${s.url})`, height }}
+            className="
+              w-full 
+              bg-cover bg-center 
+              flex 
+              items-center 
+              justify-start
+              p-5 
+              sm:p-10
+              min-h-[40vh]       
+              sm:min-h-[55vh]   
+              md:min-h-[70vh]  
+            "
+            style={{ backgroundImage: `url(${s.url})` }}
           >
-            <h2 className="text-4xl font-bold text-white drop-shadow-lg">
+            <h2
+              className="
+                text-white font-bold drop-shadow-lg
+                text-2xl     
+                sm:text-3xl   
+                md:text-4xl  
+                lg:text-5xl
+                max-w-[80%] 
+              "
+            >
               {s.title}
             </h2>
           </div>
@@ -32,5 +52,6 @@ export default function HomeSlider({ slide = [], height = "75vh" }) {
       ))}
     </Swiper>
   </div>
+  
   );
 }

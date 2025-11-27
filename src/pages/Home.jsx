@@ -18,32 +18,32 @@ const slides = [
 const Home = () => {
   return (
     <div>
-      <div className="w-full h-[75vh] ">
-        <HomeSlider slide={slides}/>
+      <div className="w-full h-[45vh] sm:h-[40vh] md:h-[60vh] lg:h-[75vh]">
+        <HomeSlider slide={slides} />
       </div>
       {/* section-2........ */}
-       <div>
-            <Mapp/>
-       </div>
+      <div>
+        <Mapp />
+      </div>
       {/* section-3............ */}
       <div>
-         <OurProduct/>
+        <OurProduct />
       </div>
       {/* section-4......... */}
       <div>
-        <OurOfferings/>
+        <OurOfferings />
       </div>
       {/* section-5............ */}
       <div>
-          <EasyLoans/>
+        <EasyLoans />
       </div>
       {/* sections-6....... */}
       <div>
-         <LoanProcess/>
+        <LoanProcess />
       </div>
       {/* section-7................. */}
       <div>
-           <BankSlider/>
+        <BankSlider />
       </div>
     </div>
   );

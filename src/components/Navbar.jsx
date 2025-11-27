@@ -50,7 +50,7 @@ const Navbar = () => {
                <IoMdSearch className="text-[23px] relative right-10 text-white pointer-events-none"/>
              </div>
              <button 
-               className="w-full px-5 py-2 rounded-lg text-center border-1 bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">LogIn</button>
+               className="w-full px-5 py-2 rounded-lg text-center border-1 bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
            </div>
          </div>
        )}
