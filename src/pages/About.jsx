@@ -3,7 +3,7 @@ import HomeSlider from "../components/Homeslider";
 import Mapp from "../components/mapp";
 import img1 from "../assets/aboutImg.webp";
 import img2 from "../assets/m-2.avif";
-import img3 from "../assets/aboutimg2.jpeg";
+import img3 from "../assets/aboutImg2.jpeg";
 import { FaPlay } from "react-icons/fa";
 import imgAboutsec from "../assets/imgAboutsec.jpg";
 import logoimg1 from "../assets/missionLogo.png";
