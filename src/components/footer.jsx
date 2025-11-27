@@ -52,7 +52,7 @@ function Footer() {
 
                 {/* COLUMN 2 */}
                 <div className="flex flex-col gap-2">
-                    <p className="font-semibold uppercase mb-1">Supports</p>
+                    <p className="font-semibold uppercase mb-1 text-[#443693]">Supports</p>
                     <NavLink to="/about"><p className="text-sm">About</p></NavLink>
                     <NavLink to="/"><p className="text-sm">Loan Products</p></NavLink>
                     <NavLink to="/contact"><p className="text-sm">Contact Us</p></NavLink>
@@ -60,7 +60,7 @@ function Footer() {
 
                 {/* COLUMN 3 */}
                 <div className="flex flex-col gap-2">
-                    <p className="font-semibold uppercase mb-1">Services</p>
+                    <p className="font-semibold uppercase mb-1 text-[#443693]">Services</p>
                     <NavLink to="/LoanPorduct"><p className="text-sm">MSME Loan</p></NavLink>
                     <NavLink to="/LoanPorduct"><p className="text-sm">Construction Loan</p></NavLink>
                     <NavLink to="/LoanPorduct"><p className="text-sm">Plot Loan</p></NavLink>
@@ -72,17 +72,17 @@ function Footer() {
                     <NavLink to="/LoanPorduct"><p className="text-sm">Personal Loan</p></NavLink>
                 </div>
 
-                {/* COLUMN 4 */}
+             
                 <div className="flex flex-col gap-2">
-                    <p className="font-semibold uppercase mb-1">Company</p>
+                    <p className="font-semibold uppercase mb-1 text-[#443693]">Company</p>
                     <NavLink to="/about"><p className="text-sm">About</p></NavLink>
                     <NavLink to="/"><p className="text-sm">Login</p></NavLink>
                     <NavLink to="/loan-calculator"><p className="text-sm">EMI Calculator</p></NavLink>
                 </div>
 
-                {/* COLUMN 5 */}
+                
                 <div className="flex flex-col gap-3">
-                    <p className="font-semibold uppercase mb-1">Join Us on WhatsApp</p>
+                    <p className="font-semibold uppercase mb-1 text-[#443693]">Join Us on WhatsApp</p>
                     <p className="text-sm leading-5">
                         Receive updates, hot deals, discounts delivered
                         straight to your WhatsApp daily.
@@ -92,10 +92,10 @@ function Footer() {
 
             </div>
 
-            {/* DIVIDER */}
+         
             <div className="border-b border-gray-400 mt-10"></div>
 
-            {/* COPYRIGHT */}
+            
             <p className="text-center mt-4 text-sm">
                 © 2025 Finvoy Global | All Rights Reserved.
             </p>

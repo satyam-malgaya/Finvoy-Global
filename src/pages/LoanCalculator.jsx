@@ -91,7 +91,7 @@ export default function LoanCalculator() {
       <h1 className="absolute lg:top-50 lg:left-30 top-20 left-6 text-white text-2xl md:text-6xl font-bold ">Loan Calculat</h1>
     <div className="max-w-5xl mx-auto lg:my-20 p-6">
       <div className="bg-white shadow-lg rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold mb-4">Loan Calculator</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-[#443693]">Loan Calculator</h2>
 
         {/* Inputs */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">

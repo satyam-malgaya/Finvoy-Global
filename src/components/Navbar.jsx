@@ -22,7 +22,7 @@ const Navbar = () => {
        <NavLink className={styles.navlink} to="/about">About</NavLink>
        <NavLink className={styles.navlink} to="/contact">Contact</NavLink>
        <NavLink className={styles.navlink} to="/loan-calculator">Loan Calculator</NavLink>
-       <NavLink className={styles.navlink} to="/careers">Careers</NavLink>
+      
        </div>
        <div className="hidden md:flex flex-row gap-2">
          <div className="flex items-center ">
