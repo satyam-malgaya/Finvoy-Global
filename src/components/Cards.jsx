@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import data from "../data/Data.json";
+import { useNavigate } from "react-router-dom";
 const Cards = () => {
+    const navigate=useNavigate()
   const resolveImage = (imageName) =>
     new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
@@ -31,6 +33,9 @@ const Cards = () => {
                 Know More
               </Link>
               <Link
+                onClick={()=>{
+               navigate('/contact')
+                }}
                 href={loan.buttons.applyNow}
                 className="rounded bg-[#170C52] px-4 py-2 text-sm font-medium text-white transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#0f0637]"
               >
