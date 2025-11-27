@@ -5,6 +5,7 @@ import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
+    
   return (
     <div className="w-full relative">
 

@@ -1,7 +1,17 @@
 import React from 'react'
-import map from "../assets/india-map.png";
+// import map from "../assets/india-map.png";
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useParams } from "react-router-dom";
+
 
 const Mapp = () => {
+  const navigate=useNavigate()
+  const { loanId } = useParams();
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [loanId]);
   return (
     <div className="w-full min-h-[110vh] flex flex-col-reverse gap-8 px-6 py-10 shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
     <div className="w-full lg:w-[101%] flex flex-col justify-center items-center  h-full">
@@ -29,7 +39,11 @@ const Mapp = () => {
           and hassle-free services,<b>Finvoy Global</b> is your reliable
           partner in achieving financial freedom.
         </p>
-        <button className="w-full sm:w-40 h-13 transform transition duration-200 ease-out outline-none hover:-translate-y-1 rounded-sm text-white font-medium bg-[#170C52]">
+        <button 
+          onClick={()=>{
+            navigate('/contact')
+          }}
+        className="w-full sm:w-40 h-13 transform transition duration-200 ease-out outline-none hover:-translate-y-1 rounded-sm text-white font-medium bg-[#170C52]">
           Contact Now
         </button>
       </div>
