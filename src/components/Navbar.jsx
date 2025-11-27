@@ -44,7 +44,7 @@ const Navbar = () => {
 
        <div className='hidden md:flex flex-row gap-10 text-[18px]'>
        <NavLink className={styles.navlink} to="/">Home</NavLink>
-       <NavLink className={styles.navlink} to="/LoanPorduct">LoanProduct</NavLink>
+       <NavLink className={styles.navlink} to="/loan-products">LoanProduct</NavLink>
        <NavLink className={styles.navlink} to="/about">About</NavLink>
        <NavLink className={styles.navlink} to="/contact">Contact</NavLink>
        <NavLink className={styles.navlink} to="/loan-calculator">Loan Calculator</NavLink>
@@ -72,7 +72,7 @@ const Navbar = () => {
          <div className="absolute top-20 left-0 w-full bg-white shadow-2xl z-50 md:hidden">
            <div className="flex flex-col px-5  py-4 gap-2">
              <NavLink className={styles.navlink} to="/" onClick={() => setMobileMenuOpen(false)}>Home</NavLink>
-             <NavLink className={styles.navlink} to="/LoanProduct" onClick={() => setMobileMenuOpen(false)}>LoanProduct</NavLink>
+             <NavLink className={styles.navlink} to="/loan-products" onClick={() => setMobileMenuOpen(false)}>LoanProduct</NavLink>
              <NavLink className={styles.navlink} to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink>
              <NavLink className={styles.navlink} to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
             <NavLink className={styles.navlink} to="/loan-calculator" onClick={() => setMobileMenuOpen(false)}>Loan Calculator</NavLink>
