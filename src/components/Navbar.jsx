@@ -2,10 +2,9 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { IoMdSearch } from "react-icons/io";
-
-
 import { IoMenu, IoClose } from "react-icons/io5";
 import logo from "/logo.png"
+
 
 import { useState } from "react";
 import data from "../data/Data.json";
@@ -36,7 +35,11 @@ const Navbar = () => {
   return (
       <nav className='w-full h-20 shadow-2xl justify-between flex items-center px-5 relative'>
         <div>
-           <img className="w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
+           <img 
+            onClick={()=>{
+               navigate("/")
+            }}
+           className="w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
         </div>
 
        <div className='hidden md:flex flex-row gap-10 text-[18px]'>
