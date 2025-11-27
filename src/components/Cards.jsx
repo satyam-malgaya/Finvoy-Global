@@ -30,12 +30,12 @@ const Cards = () => {
               >
                 Know More
               </Link>
-              <a
+              <Link
                 href={loan.buttons.applyNow}
                 className="rounded bg-[#170C52] px-4 py-2 text-sm font-medium text-white transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#0f0637]"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
