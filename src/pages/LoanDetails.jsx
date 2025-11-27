@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import data from "../data/Data.json";
 
@@ -7,6 +7,11 @@ const resolveImage = (imageName) =>
 
 const LoanDetails = () => {
   const { loanId } = useParams();
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [loanId]);
+
   const loan = data.loanProducts.find(
     (item) => String(item.id) === String(loanId)
   );
