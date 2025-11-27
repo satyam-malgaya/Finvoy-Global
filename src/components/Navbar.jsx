@@ -18,6 +18,7 @@ const Navbar = () => {
         </div>
        <div className='hidden md:flex flex-row gap-10 text-[18px]'>
        <NavLink className={styles.navlink} to="/">Home</NavLink>
+       <NavLink className={styles.navlink} to="/LoanPorduct">LoanProduct</NavLink>
        <NavLink className={styles.navlink} to="/about">About</NavLink>
        <NavLink className={styles.navlink} to="/contact">Contact</NavLink>
        <NavLink className={styles.navlink} to="/loan-calculator">Loan Calculator</NavLink>
@@ -38,7 +39,7 @@ const Navbar = () => {
        </button>
        {mobileMenuOpen && (
          <div className="absolute top-20 left-0 w-full bg-white shadow-2xl z-50 md:hidden">
-           <div className="flex flex-col px-5 py-4 gap-4">
+           <div className="flex flex-col px-5  py-4 gap-2">
              <NavLink className={styles.navlink} to="/" onClick={() => setMobileMenuOpen(false)}>Home</NavLink>
              <NavLink className={styles.navlink} to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink>
              <NavLink className={styles.navlink} to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
@@ -49,7 +50,7 @@ const Navbar = () => {
                <IoMdSearch className="text-[23px] relative right-10 text-white pointer-events-none"/>
              </div>
              <button 
-               className="w-full px-5 py-2 rounded-lg text-center border-1 bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">LogIn</button>
+               className="w-full px-5 py-2 rounded-lg text-center border-1 bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
            </div>
          </div>
        )}
