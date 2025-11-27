@@ -1,14 +1,11 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import data from "../data/Data.json";
-import { useNavigate } from "react-router-dom";
 const Cards = () => {
-    const navigate=useNavigate()
   const resolveImage = (imageName) =>
     new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
-    
-    <div className="grid grid-cols-1 gap-6 px-3 py-5 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
+     <div className="grid grid-cols-1 gap-6 px-3 py-5 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
       {data.loanProducts.map((loan, index) => (
         <div
           key={index}

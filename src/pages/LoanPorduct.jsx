@@ -1,9 +1,10 @@
 import React from "react";
 import img from "../assets/m-2.avif";
 import data from "../data/Data.json";
-import { Link } from "react-router-dom";
+import { Link,useNavigate  } from "react-router-dom";
 
 const LoanPorduct = () => {
+    const navigate=useNavigate()
     const resolveImage = (imageName) =>
         new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
@@ -56,7 +57,11 @@ const LoanPorduct = () => {
                     KNOW MORE
                   </Link>
 
-                  <button className="w-1/2 py-2 rounded-md bg-[#170C52] text-white font-medium hover:bg-[#0e0636] transition-all duration-300">
+                  <button
+                  onClick={()=>{
+                    navigate('/contact')
+                  }}
+                  className="w-1/2 py-2 rounded-md bg-[#170C52] text-white font-medium hover:bg-[#0e0636] transition-all duration-300">
                     APPLY NOW
                   </button>
                 </div>

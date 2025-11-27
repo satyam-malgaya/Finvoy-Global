@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './Cards'
+import Cards from '../components/Cards.jsx'
 import { useState } from 'react';
 import { GoArrowUpRight } from "react-icons/go";
 
