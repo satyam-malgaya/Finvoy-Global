@@ -4,6 +4,7 @@ import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -52,31 +53,31 @@ function Footer() {
                 {/* COLUMN 2 */}
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold uppercase mb-1">Supports</p>
-                    <NavLink to="/"><p className="text-sm">About</p></NavLink>
+                    <NavLink to="/about"><p className="text-sm">About</p></NavLink>
                     <NavLink to="/"><p className="text-sm">Loan Products</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Contact Us</p></NavLink>
+                    <NavLink to="/contact"><p className="text-sm">Contact Us</p></NavLink>
                 </div>
 
                 {/* COLUMN 3 */}
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold uppercase mb-1">Services</p>
-                    <NavLink to="/"><p className="text-sm">MSME Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Construction Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Plot Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Loan Against Property (LAP)</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Salaried Personal Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Gold Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Home Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Business Loan</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Personal Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">MSME Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Construction Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Plot Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Loan Against Property (LAP)</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Salaried Personal Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Gold Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Home Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Business Loan</p></NavLink>
+                    <NavLink to="/LoanPorduct"><p className="text-sm">Personal Loan</p></NavLink>
                 </div>
 
                 {/* COLUMN 4 */}
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold uppercase mb-1">Company</p>
-                    <NavLink to="/"><p className="text-sm">About</p></NavLink>
+                    <NavLink to="/about"><p className="text-sm">About</p></NavLink>
                     <NavLink to="/"><p className="text-sm">Login</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">EMI Calculator</p></NavLink>
+                    <NavLink to="/loan-calculator"><p className="text-sm">EMI Calculator</p></NavLink>
                 </div>
 
                 {/* COLUMN 5 */}
@@ -86,6 +87,7 @@ function Footer() {
                         Receive updates, hot deals, discounts delivered
                         straight to your WhatsApp daily.
                     </p>
+                        <FaWhatsapp  className="text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
                 </div>
 
             </div>
