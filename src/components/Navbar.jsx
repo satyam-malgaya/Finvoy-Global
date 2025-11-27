@@ -24,13 +24,13 @@ const Navbar = () => {
        <NavLink className={styles.navlink} to="/loan-calculator">Loan Calculator</NavLink>
        <NavLink className={styles.navlink} to="/careers">Careers</NavLink>
        </div>
-       <div className="hidden md:flex flex-row gap-2">
-         <div className="flex items-center ">
-            <input className="px-[12px] w-65 py-[8px] rounded-full transform transition duration-200 ease-out outline-none hover:-translate-y-0.5 bg-[#170C52] hover:bg-[#170C89] text-white placeholder:text-white" type="search"  placeholder="Search..." />
-            <IoMdSearch className="text-[23px] relative right-10 text-white"/>
-         </div>
+      <div className="hidden md:flex flex-row gap-3">
+        <div className="relative flex w-72 items-center">
+           <input className="w-full rounded-full bg-[#170C52] px-4 py-2 pr-10 text-white placeholder:text-white transition duration-200 ease-out outline-none hover:-translate-y-0.5 hover:bg-[#170C89]" type="search"  placeholder="Search..." />
+           <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white"/>
+        </div>
          <button 
-         className="px-5 py-2 rounded-lg text-center border-1 bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">LogIn</button>
+        className="px-5 py-2 rounded-lg text-center border bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">LogIn</button>
        </div>
        <button 
          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -45,12 +45,12 @@ const Navbar = () => {
              <NavLink className={styles.navlink} to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
              <NavLink className={styles.navlink} to="/loan-calculator" onClick={() => setMobileMenuOpen(false)}>Loan Calculator</NavLink>
              <NavLink className={styles.navlink} to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</NavLink>
-             <div className="flex items-center mt-2 mb-2">
-               <input className="px-[12px] w-full py-[8px] rounded-full transform transition duration-200 ease-out outline-none hover:-translate-y-0.5 bg-[#170C52] hover:bg-[#170C89] text-white placeholder:text-white" type="search" placeholder="Search..." />
-               <IoMdSearch className="text-[23px] relative right-10 text-white pointer-events-none"/>
+            <div className="relative mt-2 mb-2 flex items-center">
+              <input className="w-full rounded-full bg-[#170C52] px-4 py-2 pr-10 text-white placeholder:text-white transition duration-200 ease-out outline-none hover:-translate-y-0.5 hover:bg-[#170C89]" type="search" placeholder="Search..." />
+              <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white"/>
              </div>
-             <button 
-               className="w-full px-5 py-2 rounded-lg text-center border-1 bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
+            <button 
+              className="w-full px-5 py-2 rounded-lg text-center border bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
            </div>
          </div>
        )}
