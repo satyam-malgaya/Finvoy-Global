@@ -54,7 +54,7 @@ function Footer() {
                 <div className="flex flex-col gap-2">
                     <p className="font-semibold uppercase mb-1 text-[#443693]">Supports</p>
                     <NavLink to="/about"><p className="text-sm">About</p></NavLink>
-                    <NavLink to="/"><p className="text-sm">Loan Products</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Loan Products</p></NavLink>
                     <NavLink to="/contact"><p className="text-sm">Contact Us</p></NavLink>
                 </div>
 
@@ -70,6 +70,18 @@ function Footer() {
                     <NavLink to="/LoanPorduct"><p className="text-sm">Home Loan</p></NavLink>
                     <NavLink to="/LoanPorduct"><p className="text-sm">Business Loan</p></NavLink>
                     <NavLink to="/LoanPorduct"><p className="text-sm">Personal Loan</p></NavLink>
+
+                    <p className="font-semibold uppercase mb-1">Services</p>
+                    <NavLink to="/loan-products"><p className="text-sm">MSME Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Construction Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Plot Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Loan Against Property (LAP)</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Salaried Personal Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Gold Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Home Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Business Loan</p></NavLink>
+                    <NavLink to="/loan-products"><p className="text-sm">Personal Loan</p></NavLink>
+
                 </div>
 
              
