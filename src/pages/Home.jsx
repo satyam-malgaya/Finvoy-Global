@@ -8,7 +8,7 @@ import img2 from "../assets/m-3.avif";
 import img3 from "../assets/wix-loan.png";
 import EasyLoans from "../components/EasyLoans";
 import LoanProcess from "../components/LoanProcess";
-import BankSlider from "../components/bankSlider";
+import BankSlider from "../components/BankSlider";
 const slides = [
   { url: img1, title: "Affordable Home Loans", subtitle: "Low interest rates" },
   { url: img2, title: "Quick Approval", subtitle: "Fast and simple" },
