@@ -25,7 +25,7 @@ const OurProduct = () => {
     setishover(false)
   }
   return (
-    <div className="w-full bg-white px-5 py-10 sm:px-10 sm:py-14 lg:px-20">
+    <div className="w-full bg-white px-2 py-10 sm:px-10 sm:py-14 lg:px-20">
       <div className="w-full h-auto">
          <div className="w-full flex flex-col items-center justify-center text-center gap-4">
             <h1 className="text-3xl font-bold tracking-[1px] sm:text-[40px]">Explore our Products</h1>
@@ -39,7 +39,7 @@ const OurProduct = () => {
               onMouseLeave={()=>{arrowLeaveHandler(0)}}
               className=" flex justify-center"
               >
-            <button  className={`  w-36 rounded-sm h-13 px-1 justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
+            <button  className={`  lg:w-37 sm:w-40 rounded-sm h-13 px-1 justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
            </div>
       </div>
     </div>

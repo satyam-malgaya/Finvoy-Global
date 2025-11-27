@@ -89,7 +89,7 @@ const BankSlider = () => {
               key={bank.id}
               className="flex items-center justify-center"
             >
-              <div className="flex h-24 w-full max-w-[180px] items-center justify-center rounded-2xl bg-white/80 p-3 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg sm:h-28 sm:max-w-[200px]">
+              <div className="flex border-1 border-[#4A5565] h-24 w-full max-w-[180px] items-center justify-center rounded-2xl bg-white/80 p-3 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg sm:h-28 sm:max-w-[200px]">
                 <img
                   src={bank.img}
                   alt="Bank Logo"
