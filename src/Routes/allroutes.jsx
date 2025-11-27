@@ -3,11 +3,7 @@ import { Route,Routes } from 'react-router-dom'
 import Home from '../pages/Home'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
-
 import LoanCalculator from "../pages/LoanCalculator";
-import Careers from '../pages/Careers'
-
-import LoanCalculator from '../pages/LoanCalculator'
 import LoanDetails from '../pages/LoanDetails'
 import LoanPorduct from '../pages/LoanPorduct'
 const Allroutes = () => {

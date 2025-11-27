@@ -38,13 +38,13 @@ const Navbar = () => {
         <div>
            <img className="w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
         </div>
+
        <div className='hidden md:flex flex-row gap-10 text-[18px]'>
        <NavLink className={styles.navlink} to="/">Home</NavLink>
        <NavLink className={styles.navlink} to="/LoanPorduct">LoanProduct</NavLink>
        <NavLink className={styles.navlink} to="/about">About</NavLink>
        <NavLink className={styles.navlink} to="/contact">Contact</NavLink>
        <NavLink className={styles.navlink} to="/loan-calculator">Loan Calculator</NavLink>
-       <NavLink className={styles.navlink} to="/careers">Careers</NavLink>
        </div>
       <div className="hidden md:flex flex-row gap-3">
         <form onSubmit={handleSearchSubmit} className="relative flex w-72 items-center">
@@ -70,7 +70,6 @@ const Navbar = () => {
              <NavLink className={styles.navlink} to="/about" onClick={() => setMobileMenuOpen(false)}>About</NavLink>
              <NavLink className={styles.navlink} to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
             <NavLink className={styles.navlink} to="/loan-calculator" onClick={() => setMobileMenuOpen(false)}>Loan Calculator</NavLink>
-            <NavLink className={styles.navlink} to="/careers" onClick={() => setMobileMenuOpen(false)}>Careers</NavLink>
            <form onSubmit={handleSearchSubmit} className="relative mt-2 mb-2 flex items-center">
              <input 
              value={searchTerm}
