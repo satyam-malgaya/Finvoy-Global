@@ -32,23 +32,23 @@ const bankLogos = [
       // Existing banks, but with NON-WIKIMEDIA links (IDs 6 to 10)
       {
         id: 6,
-        img: "https://d1yjj81xgaf7p.cloudfront.net/s3-static/logos/Canara%20Bank.png", // Canara Bank
+        img: "https://www.vinayakafinserv.com/media/partner_logos/6.png", // Canara Bank
       },
       {
         id: 7,
-        img: "https://d1yjj81xgaf7p.cloudfront.net/s3-static/logos/Kotak%20Mahindra%20Bank.png", // Kotak Mahindra Bank
+        img: "https://www.vinayakafinserv.com/media/partner_logos/9.png", // Kotak Mahindra Bank
       },
       {
         id: 8,
-        img: "https://d1yjj81xgaf7p.cloudfront.net/s3-static/logos/Bank%20of%20Baroda.png", // Bank of Baroda
+        img: "https://www.vinayakafinserv.com/media/partner_logos/4.png", // Bank of Baroda
       },
       {
         id: 9,
-        img: "https://d1yjj81xgaf7p.cloudfront.net/s3-static/logos/ICICI%20Bank.png", // ICICI Bank
+        img: "https://www.vinayakafinserv.com/media/partner_logos/12.png", // ICICI Bank
       },
       {
         id: 10,
-        img: "https://d1yjj81xgaf7p.cloudfront.net/s3-static/logos/HDFC%20Bank.png", // HDFC Bank
+        img: "https://www.vinayakafinserv.com/media/partner_logos/3.png", // HDFC Bank
       }
   ];
   
@@ -71,7 +71,7 @@ const BankSlider = () => {
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
         <Swiper
           modules={[Navigation, Autoplay]}
-          navigation
+          navigation={false}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop
           centeredSlides={false}

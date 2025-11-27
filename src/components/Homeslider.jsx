@@ -13,7 +13,7 @@ export default function HomeSlider({ slide = [], height = "75vh" }) {
       modules={[Autoplay, Pagination, Navigation]}
       autoplay={{ delay: 3500 }}
       pagination={{ clickable: true }}
-      navigation={true}
+      navigation={false}
       loop={true}
       slidesPerView={1}
       className="h-full"

@@ -6,11 +6,13 @@ import Contact from '../pages/Contact'
 import LoanCalculator from '../pages/LoanCalculator'
 import Careers from '../pages/Careers'
 import LoanDetails from '../pages/LoanDetails'
+import LoanPorduct from '../pages/LoanPorduct'
 const Allroutes = () => {
   return (
     <div>
        <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/LoanPorduct" element={<LoanPorduct />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/loan-calculator" element={<LoanCalculator />} />
