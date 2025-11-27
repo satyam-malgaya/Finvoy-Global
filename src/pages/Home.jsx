@@ -1,6 +1,6 @@
 import React from "react";
 import HomeSlider from "../components/Homeslider";
-import Mapp from "../components/mapp";
+import Mapp from "../components/Mapp";
 import OurProduct from "../components/OurProduct";
 import OurOfferings from "../components/OurOfferings";
 import img1 from "../assets/m-1.avif";
