@@ -4,6 +4,7 @@ import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -86,6 +87,7 @@ function Footer() {
                         Receive updates, hot deals, discounts delivered
                         straight to your WhatsApp daily.
                     </p>
+                        <FaWhatsapp  className="text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
                 </div>
 
             </div>

@@ -13,9 +13,6 @@ import {
   CartesianGrid,
 } from 'recharts';
 
-// LoanCalculator.jsx
-// Single-file React component (TailwindCSS + recharts)
-// Usage: import LoanCalculator from './LoanCalculator'; then render <LoanCalculator />
 
 export default function LoanCalculator() {
   const [amount, setAmount] = useState(500000);
@@ -89,9 +86,10 @@ export default function LoanCalculator() {
   }
 
   return (
-    <div>
-      <img src={loanCalculators} className="w-full h-[80vh]"/>
-    <div className="max-w-5xl mx-auto p-6">
+    <div className="relative">
+      <img src={loanCalculators} className="w-full h-[45vh] sm:h-[40vh] md:h-[60vh] lg:h-[75vh]"/>
+      <h1 className="absolute lg:top-50 lg:left-30 top-20 left-6 text-white text-2xl md:text-6xl font-bold ">Loan Calculat</h1>
+    <div className="max-w-5xl mx-auto lg:my-20 p-6">
       <div className="bg-white shadow-lg rounded-2xl p-6">
         <h2 className="text-2xl font-semibold mb-4">Loan Calculator</h2>
 

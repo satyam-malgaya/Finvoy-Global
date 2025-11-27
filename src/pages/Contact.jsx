@@ -6,14 +6,14 @@ import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div className="w-full">
+    <div className="w-full relative">
 
       {/* Banner Image */}
       <img
         src={ContactPhoto}
         className="w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover"
       />
-
+      <h1 className="absolute lg:top-50 lg:left-30 top-20 left-6 text-white text-2xl md:text-6xl font-bold ">Contact Us</h1>
       {/* Heading Section */}
       <div className="text-center flex flex-col gap-y-3 my-10 px-4">
         <h2 className="text-lg md:text-xl font-bold text-blue-800">Get In Touch</h2>
@@ -29,7 +29,7 @@ const Contact = () => {
       {/* Contact Info Section */}
       <div className="bg-gray-100 py-10 md:py-16 px-5 sm:px-10 md:px-20 lg:px-40">
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4">
 
           {/* Location Card */}
           <div className="bg-white border py-6 px-5 w-full border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
