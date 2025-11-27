@@ -4,12 +4,11 @@ import map from "../assets/india-map.png";
 const Mapp = () => {
   return (
     <div className="w-full min-h-[110vh] flex flex-col-reverse gap-8 px-6 py-10 shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
-    <div className="w-full lg:w-[55%]  h-full">
+    <div className="w-full lg:w-[101%] flex flex-col justify-center items-center  h-full">
       <h1 className="text-black pl-15 text-3xl font-bold sm:text-[35px]">
-        About{" "}
-        <span className="text-[#443693] tracking-[1px]">Finvoy Global</span>
+        About{" "}<span className="text-[#443693] tracking-[1px]">Finvoy Global</span>
       </h1>
-      <div className="flex flex-col pt-6 pl-15 gap-5 text-base leading-relaxed sm:text-lg lg:gap-6">
+      <div className="flex flex-col pt-6 lg:px-15 sm:px-2 items-center justify-center gap-5 text-base leading-relaxed sm:text-lg lg:gap-6">
         <p>
           At <b>Finvoy Global</b>, we are dedicated to making finance simple,
           accessible, and stress-free. With our strong network of leading
@@ -34,13 +33,6 @@ const Mapp = () => {
           Contact Now
         </button>
       </div>
-    </div>
-    <div className="w-full lg:w-[45%] h-full flex justify-center items-center">
-      <img
-        src={map}
-        className="w-[80%] max-w-md object-cover object-center sm:w-[70%]"
-        alt="sorry the image is not show "
-      />
     </div>
   </div>
   )
