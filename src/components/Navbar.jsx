@@ -55,6 +55,9 @@ const Navbar = () => {
            <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white"/>
         </form>
          <button 
+         onClick={()=>{
+             navigate(`/contact`)
+         }}
         className="px-5 py-2 rounded-lg text-center border bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
        </div>
        <button 
