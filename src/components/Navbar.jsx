@@ -83,7 +83,10 @@ const Navbar = () => {
              className="w-full rounded-full bg-[#170C52] px-4 py-2 pr-10 text-white placeholder:text-white transition duration-200 ease-out outline-none hover:-translate-y-0.5 hover:bg-[#170C89]" type="search" placeholder="Search loan..." />
              <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white"/>
             </form>
-            <button 
+            <button
+               onClick={()=>{
+                navigate(`/contact`)
+            }} 
               className="w-full px-5 py-2 rounded-lg text-center border bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
            </div>
          </div>
