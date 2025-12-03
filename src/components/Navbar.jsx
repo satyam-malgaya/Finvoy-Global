@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { IoMdSearch } from "react-icons/io";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { RiMenuUnfold2Line } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 import logo from "/logo.png"
 
 
@@ -66,7 +67,7 @@ const Navbar = () => {
        <button 
          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
          className="md:hidden text-[28px] text-[#170C52] focus:outline-none">
-         {mobileMenuOpen ? <IoClose /> : <IoMenu />}
+         {mobileMenuOpen ? <IoClose /> : <RiMenuUnfold2Line />}
        </button>
        {mobileMenuOpen && (
          <div className="absolute top-20 left-0 w-full bg-white shadow-2xl z-50 md:hidden">

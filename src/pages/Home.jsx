@@ -18,7 +18,7 @@ const slides = [
 const Home = () => {
   return (
     <div>
-      <div className="w-full h-[45vh] sm:h-[40vh] md:h-[60vh] lg:h-[75vh]">
+      <div className="w-full sm:h-[40vh] md:h-[60vh] lg:h-[75vh]">
         <HomeSlider slide={slides} />
       </div>
       {/* section-2........ */}

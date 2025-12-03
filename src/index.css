@@ -1,0 +1,20 @@
+.card img {
+    width: 80px;
+    height: 80px;
+    animation: rotateFloat 1.5s ease-in-out infinite;
+  }
+  
+  /* Animation */
+  @keyframes rotateFloat {
+    0% {
+      transform: rotate(0deg) translateY(0);
+    }
+    50% {
+      transform: rotate(6deg) translateY(-8px);
+    }
+    100% {
+      transform: rotate(0deg) translateY(0);
+    }
+  }
+  
+  
