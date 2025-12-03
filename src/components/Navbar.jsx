@@ -39,7 +39,7 @@ const Navbar = () => {
             onClick={()=>{
                navigate("/")
             }}
-           className="w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
+           className="animate-[moveLR_1s_ease-in-out_infinite] w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain" src={logo} alt="Sorry the logo was not show" />
         </div>
 
        <div className='hidden md:flex flex-row gap-10 text-[18px]'>

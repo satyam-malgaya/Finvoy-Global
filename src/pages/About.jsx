@@ -2,7 +2,7 @@ import React from "react";
 import HomeSlider from "../components/Homeslider";
 import Mapp from "../components/mapp";
 import img1 from "../assets/aboutImg.webp";
-import img2 from "../assets/m-2.avif";
+import img2 from "../assets/aboutImg1.jpg";
 import img3 from "../assets/aboutImg2.jpeg";
 import { FaPlay } from "react-icons/fa";
 import imgAboutsec from "../assets/imgAboutsec.jpg";
@@ -84,7 +84,7 @@ const About = () => {
 
 
         <div className="bg-white h-[60vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 ">
-          <img src={logoimg1} className="h-[20vh] mx-auto" alt="Our Mission" />
+          <img src={logoimg1} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Mission" />
           <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Mission</h1>
           <p className="text-gray-700 mt-2">
             To simplify access to financial services by offering transparent, reliable, and customized loan solutions. We aim to empower individuals and businesses to achieve their goals with confidence and ease.
@@ -92,18 +92,18 @@ const About = () => {
         </div>
 
 
-        <div className="bg-white h-[60vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-          <img src={logoimg2} className="h-[20vh] mx-auto" alt="Our Vision" />
-          <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Vision</h1>
+        <div className="bg-white h-[63vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+          <img src={logoimg2} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Vision" />
+          <h1 className="text-2xl font-bold text-[#443693] ">Our Vision</h1>
           <p className="text-gray-700 mt-2">
             To be the most trusted financial partner, connecting people with leading banks and institutions, and ensuring easy, affordable, and stress-free loan approvals for every client we serve.
           </p>
         </div>
 
 
-        <div className="bg-white h-[60vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-          <img src={logoimg3} className="h-[20vh] mx-auto" alt="Our Story" />
-          <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Story</h1>
+        <div className="bg-white h-[63vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+          <img src={logoimg3} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Story" />
+          <h1 className="text-2xl font-bold text-[#443693] ">Our Story</h1>
           <p className="text-gray-700 mt-2">
             Vinayaka Finserv was founded with a vision to make finance simple and accessible. With years of experience and strong banking partnerships, we have helped countless clients secure loans and achieve their dreams through trust, integrity, and personalized service.
           </p>

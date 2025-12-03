@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import loanCalculators from "../assets/loanImg.jpg";
+import calculatorImg from "../assets/calculatorImg.jpg";
 import {
   LineChart,
   Line,
@@ -87,11 +87,11 @@ export default function LoanCalculator() {
 
   return (
     <div className="relative">
-      <img src={loanCalculators} className="w-full h-[45vh] sm:h-[40vh] md:h-[60vh] lg:h-[75vh]"/>
+      <img src={calculatorImg} className=" w-full object-cover object-center  h-[35vh] sm:h-[40vh] md:h-[55vh] lg:h-[70vh] xl:h-[80vh]  max-h-[80vh]"/>
       <h1 className="absolute lg:top-50 lg:left-30 top-20 left-6 text-white text-2xl md:text-6xl font-bold ">Loan Calculat</h1>
     <div className="max-w-5xl mx-auto lg:my-20 p-6">
       <div className="bg-white shadow-lg rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold mb-4 text-[#443693]">Loan Calculator</h2>
+        <h2 className="text-2xl text-center font-bold mb-8 text-[#170C52] ">Loan Calculator</h2>
 
         {/* Inputs */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
@@ -101,18 +101,18 @@ export default function LoanCalculator() {
               type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
-              className="mt-2 p-3 border rounded-lg"
+              className="mt-2 p-3 border border-[#443693]  rounded-lg"
               min={0}
             />
           </label>
 
           <label className="flex flex-col">
-            <span className="text-sm text-gray-600">Loan Tenure (years)</span>
+            <span className="text-sm text-gray-600 ">Loan Tenure (years)</span>
             <input
               type="number"
               value={years}
               onChange={(e) => setYears(e.target.value)}
-              className="mt-2 p-3 border rounded-lg"
+              className="mt-2 p-3 border border-[#443693] rounded-lg"
               min={0}
             />
           </label>
@@ -123,7 +123,7 @@ export default function LoanCalculator() {
               type="number"
               value={annualRate}
               onChange={(e) => setAnnualRate(e.target.value)}
-              className="mt-2 p-3 border rounded-lg"
+              className="mt-2 p-3 border border-[#443693] rounded-lg"
               step="0.01"
               min={0}
             />
@@ -134,24 +134,24 @@ export default function LoanCalculator() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
           <div className="p-4 bg-gray-50 rounded-lg text-center">
             <div className="text-sm text-gray-500">Monthly Payment</div>
-            <div className="text-xl font-bold mt-2">₹ {formatCurrency(monthlyPayment)}</div>
+            <div className="animate-bounce text-xl text-[#443693] font-bold mt-2">₹ {formatCurrency(monthlyPayment)}</div>
           </div>
 
           <div className="p-4 bg-gray-50 rounded-lg text-center">
             <div className="text-sm text-gray-500">Total Interest</div>
-            <div className="text-xl font-bold mt-2">₹ {formatCurrency(totalInterest)}</div>
+            <div className="animate-bounce text-xl font-bold text-[#443693] mt-2">₹ {formatCurrency(totalInterest)}</div>
           </div>
 
           <div className="p-4 bg-gray-50 rounded-lg text-center">
             <div className="text-sm text-gray-500">Total Amount Payable</div>
-            <div className="text-xl font-bold mt-2">₹ {formatCurrency(totalPaid)}</div>
+            <div className="animate-bounce text-xl text-[#443693] font-bold mt-2">₹ {formatCurrency(totalPaid)}</div>
           </div>
         </div>
 
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6 h-96">
           <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="font-medium mb-2">Balance over time</h3>
+            <h3 className="font-medium mb-2 text-[#443693]">Balance over time</h3>
             <ResponsiveContainer width="100%" height="85%">
               <LineChart data={schedule}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -165,7 +165,7 @@ export default function LoanCalculator() {
           </div>
 
           <div className="bg-white rounded-lg shadow p-4">
-            <h3 className="font-medium mb-2">Yearly Principal vs Interest</h3>
+            <h3 className="font-medium mb-2 text-[#443693]">Yearly Principal vs Interest</h3>
             <ResponsiveContainer width="100%" height="85%">
               <BarChart data={yearly}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -181,6 +181,8 @@ export default function LoanCalculator() {
         </div>
 
         {/* Yearly table */}
+        <details className="mt-4 bg-gray-50 p-4 rounded-lg">
+        <summary className="cursor-pointer font-medium">Yearly amortization (show/hide)</summary>
         <div className="overflow-x-auto bg-white rounded-lg shadow p-4">
           <h3 className="font-medium mb-4">Yearly Payment Breakdown</h3>
           <table className="min-w-full text-left">
@@ -204,6 +206,7 @@ export default function LoanCalculator() {
             </tbody>
           </table>
         </div>
+       </details>
 
         {/* Monthly details collapsible (small) */}
         <details className="mt-4 bg-gray-50 p-4 rounded-lg">
