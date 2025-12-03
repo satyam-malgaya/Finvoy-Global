@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactPhoto from '../assets/ContactPhoto.webp';
 import { NavLink } from "react-router-dom";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { useEffect } from 'react';
 const Contact = () => {
+
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
   }, []);
@@ -33,11 +33,11 @@ const Contact = () => {
 
       {/* Contact Info Section */}
       <div className="bg-gray-100 py-10 md:py-16 px-5 sm:px-10 md:px-20 lg:px-40">
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 gap-4">
 
           {/* Location Card */}
-          <div className="bg-white  py-6 px-5 w-full border border-[#443693] rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+          <div className="bg-white py-6 px-5 w-full border border-[#443693] rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
             <h1 className="text-xl font-semibold mb-2">Meet with us at</h1>
             <NavLink to="/" className="flex gap-3">
               <FaLocationDot className="animate-[rotatePing_1s_linear_infinite] text-[#443693] text-6xl" />
@@ -50,7 +50,7 @@ const Contact = () => {
           </div>
 
           {/* Phone Card */}
-          <div className="bg-white border py-6 px-5 w-full border border-[#443693] rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+          <div className="bg-white py-6 px-5 w-full border border-[#443693] rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
             <h1 className="text-xl font-semibold mb-2">Make a Call</h1>
             <NavLink to="/" className="flex gap-3">
               <FaPhone className="text-[#443693] text-2xl mt-1 animate-[rotatePing_1s_linear_infinite]" />
@@ -59,7 +59,7 @@ const Contact = () => {
           </div>
 
           {/* Email Card */}
-          <div className="bg-white border py-6 px-5 w-full border border-[#443693] rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+          <div className="bg-white py-6 px-5 w-full border border-[#443693] rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
             <h1 className="text-xl font-semibold mb-2">Drop A Mail</h1>
             <p className="text-md mb-2">
               Fill out our form and we will contact you within 24 hours.
