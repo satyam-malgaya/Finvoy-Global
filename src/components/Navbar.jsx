@@ -20,23 +20,24 @@ const Navbar = () => {
   // -------------------------------
   useEffect(() => {
     let lastScrollY = window.scrollY;
-    let timer = null;
   
     const handleScroll = () => {
       const currentScroll = window.scrollY;
   
-      // Scrolling DOWN → hide navbar then show after 1 sec
-      if (currentScroll > lastScrollY) {
-        setShowNavbar(false);
-  
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-          setShowNavbar(true);
-        }, 1000); // show after 1 sec
+      // At TOP → Always SHOW navbar
+      if (currentScroll <= 0) {
+        setShowNavbar(true);
+        lastScrollY = currentScroll;
+        return;
       }
   
-      // Scrolling UP → show immediately
-      if (currentScroll < lastScrollY) {
+      // Scrolling DOWN → HIDE navbar
+      if (currentScroll > lastScrollY) {
+        setShowNavbar(false);
+      }
+  
+      // Scrolling UP → SHOW navbar
+      else {
         setShowNavbar(true);
       }
   
@@ -46,10 +47,10 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
   
     return () => {
-      clearTimeout(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   
   
 
