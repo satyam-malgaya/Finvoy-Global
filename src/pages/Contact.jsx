@@ -3,12 +3,7 @@ import ContactPhoto from '../assets/ContactPhoto.webp';
 import { NavLink } from "react-router-dom";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-<<<<<<< HEAD
 import { useEffect } from 'react';
-=======
-
-
->>>>>>> 6fcbee21388cf16e188bcb4f8c37fc83386905c0
 const Contact = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
