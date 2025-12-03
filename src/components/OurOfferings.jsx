@@ -47,7 +47,7 @@ const OurOfferings = () => {
               key={index}
               className="flex flex-col items-center justify-center gap-5 text-center"
             >
-              <div className="card flex h-28 w-28 items-center justify-center rounded-full border border-[#E9ECEF] bg-white shadow-sm sm:h-33 sm:w-28">
+              <div className="card flex lg:h-28 lg:w-28 items-center justify-center rounded-full border border-[#E9ECEF] bg-white shadow-sm sm:h-33 sm:w-28">
                 <img
                   className="h-12 w-12 object-contain sm:h-16 sm:w-16"
                   src={item.img}
