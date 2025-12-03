@@ -3,12 +3,7 @@ import ContactPhoto from '../assets/ContactPhoto.webp';
 import { NavLink } from "react-router-dom";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-<<<<<<< HEAD
 import { useEffect } from 'react';
-=======
-
-
->>>>>>> 6fcbee21388cf16e188bcb4f8c37fc83386905c0
 const Contact = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -19,10 +14,11 @@ const Contact = () => {
 
       {/* Banner Image */}
       <img
-        src={ContactPhoto}
-        className="w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover"
-      />
-      <h1 className="absolute lg:top-50 lg:left-30 top-20 left-6 text-white text-2xl md:text-6xl font-bold ">Contact Us</h1>
+    src={ContactPhoto}
+    className="w-full h-[35vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] object-cover"
+  />
+
+
       {/* Heading Section */}
       <div className="text-center flex flex-col gap-y-3 my-10 px-4">
         <h2 className="text-lg md:text-xl font-bold text-[#443693]">Get In Touch</h2>

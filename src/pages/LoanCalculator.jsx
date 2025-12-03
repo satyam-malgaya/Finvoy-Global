@@ -89,6 +89,7 @@ export default function LoanCalculator() {
     <div className="relative">
       <img src={calculatorImg} className=" w-full object-cover object-center  h-[35vh] sm:h-[40vh] md:h-[55vh] lg:h-[70vh] xl:h-[80vh]  max-h-[80vh]"/>
       <h1 className="absolute lg:top-50 lg:left-30 top-20 left-6 text-white text-2xl md:text-6xl font-bold ">Loan Calculat</h1>
+    
     <div className="max-w-5xl mx-auto lg:my-20 p-6">
       <div className="bg-white shadow-lg rounded-2xl p-6">
         <h2 className="text-2xl text-center font-bold mb-8 text-[#170C52] ">Loan Calculator</h2>
