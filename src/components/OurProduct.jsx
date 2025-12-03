@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from './Cards'
+import Cards from '../components/Cards.jsx'
 import { useState } from 'react';
 import { GoArrowUpRight } from "react-icons/go";
 
@@ -39,7 +39,7 @@ const OurProduct = () => {
               onMouseLeave={()=>{arrowLeaveHandler(0)}}
               className=" flex justify-center"
               >
-            <button  className={`  lg:w-37 sm:w-40 rounded-sm h-13 px-1 justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
+            <button  className={`lg:w-40 sm:w-45 rounded-lg h-14 px-3 justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
            </div>
       </div>
     </div>

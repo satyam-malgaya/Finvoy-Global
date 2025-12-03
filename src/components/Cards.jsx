@@ -5,8 +5,7 @@ const Cards = () => {
   const resolveImage = (imageName) =>
     new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
-    
-    <div className="grid grid-cols-1 gap-6 px-3 py-5 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
+     <div className="grid grid-cols-1 gap-6 px-3 py-5 sm:grid-cols-2 lg:grid-cols-3 lg:px-10">
       {data.loanProducts.map((loan, index) => (
         <div
           key={index}
@@ -30,12 +29,13 @@ const Cards = () => {
               >
                 Know More
               </Link>
-              <a
-                href={loan.buttons.applyNow}
+              <Link
+               to="/contact"
+                // href={loan.buttons.applyNow}
                 className="rounded bg-[#170C52] px-4 py-2 text-sm font-medium text-white transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#0f0637]"
               >
                 Apply Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>

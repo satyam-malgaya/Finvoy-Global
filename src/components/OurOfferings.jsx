@@ -2,30 +2,30 @@ import React from 'react'
 
 const OurOfferings = () => {
     const cardata=[
-        {
-            img:'https://www.vinayakafinserv.com/media/images/6342151_adwtPrZ.png',
-            h1:'Loans'
-        },
-        {
-            img:'https://www.vinayakafinserv.com/media/images/7132298_685ueiQ.png',
-            h1:'Investments'
-        },
-        {
-            img:'https://www.vinayakafinserv.com/media/images/17777592_Npm084m.png',
-            h1:'Wealth Management'
-        },
-        {
-            img:'https://www.vinayakafinserv.com/media/images/6454277_BFIQeHB.png',
-            h1:'Financial Advisory'
-        },
-        {
-            img:'https://www.vinayakafinserv.com/media/images/2711725-200_J21uCYO.png',
-            h1:'Tax & Retirement Planning'
-        },
-        {
-            img:'https://www.vinayakafinserv.com/media/images/4318299_E9eyDE1.png',
-            h1:'Credit Solutions'
-        },
+      {
+        img:'https://www.vinayakafinserv.com/media/images/6342151_adwtPrZ.png',
+        h1:'Loans'
+      },
+      {
+        img:'https://www.vinayakafinserv.com/media/images/7132298_685ueiQ.png',
+        h1:'Investments'
+      },
+      {
+        img:'https://www.vinayakafinserv.com/media/images/17777592_Npm084m.png',
+        h1:'Wealth Management'
+      },
+      {
+        img:'https://www.vinayakafinserv.com/media/images/6454277_BFIQeHB.png',
+        h1:'Financial Advisory'
+      },
+      {
+        img:'https://www.vinayakafinserv.com/media/images/2711725-200_J21uCYO.png',
+        h1:'Tax & Retirement Planning'
+      },
+      {
+        img:'https://www.vinayakafinserv.com/media/images/4318299_E9eyDE1.png',
+        h1:'Credit Solutions'
+      }
         
     ]
         
@@ -47,7 +47,7 @@ const OurOfferings = () => {
               key={index}
               className="flex flex-col items-center justify-center gap-5 text-center"
             >
-              <div className="flex h-24 w-24 items-center justify-center rounded-full border border-[#E9ECEF] bg-white shadow-sm sm:h-28 sm:w-28">
+              <div className="card flex h-28 w-28 items-center justify-center rounded-full border border-[#E9ECEF] bg-white shadow-sm sm:h-33 sm:w-28">
                 <img
                   className="h-12 w-12 object-contain sm:h-16 sm:w-16"
                   src={item.img}

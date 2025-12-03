@@ -13,11 +13,13 @@ const Mapp = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [loanId]);
   return (
-    <div className="w-full min-h-[110vh] flex flex-col-reverse gap-8 px-6 py-10 shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
+    <div className="w-full min-h-[80vh] flex justify-center items-center flex-col gap-8 px-6 py-10 md:py-2 shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
     <div className="w-full lg:w-[101%] flex flex-col justify-center items-center  h-full">
-      <h1 className="text-black pl-15 text-3xl font-bold sm:text-[35px]">
-        About{" "}<span className="text-[#443693] tracking-[1px]">Finvoy Global</span>
+      <div>
+      <h1 className="text-black text-3xl font-bold sm:text-[35px]">
+        About{" "}<span className="text-[#170C52] tracking-[1px]">Finvoy Global</span>
       </h1>
+      </div>
       <div className="flex flex-col pt-6 lg:px-15 sm:px-2 items-center justify-center gap-5 text-base leading-relaxed sm:text-lg lg:gap-6">
         <p>
           At <b>Finvoy Global</b>, we are dedicated to making finance simple,

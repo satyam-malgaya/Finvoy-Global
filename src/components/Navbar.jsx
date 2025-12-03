@@ -2,7 +2,8 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./Navbar.module.css";
 import { IoMdSearch } from "react-icons/io";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { RiMenuUnfold2Line } from "react-icons/ri";
+import { IoClose } from "react-icons/io5";
 import logo from "/logo.png"
 
 
@@ -67,7 +68,7 @@ const Navbar = () => {
        <button 
          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
          className="md:hidden text-[28px] text-[#170C52] focus:outline-none">
-         {mobileMenuOpen ? <IoClose /> : <IoMenu />}
+         {mobileMenuOpen ? <IoClose /> : <RiMenuUnfold2Line />}
        </button>
        {mobileMenuOpen && (
          <div className="absolute top-20 left-0 w-full bg-white shadow-2xl z-50 md:hidden">
@@ -84,7 +85,10 @@ const Navbar = () => {
              className="w-full rounded-full bg-[#170C52] px-4 py-2 pr-10 text-white placeholder:text-white transition duration-200 ease-out outline-none hover:-translate-y-0.5 hover:bg-[#170C89]" type="search" placeholder="Search loan..." />
              <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white"/>
             </form>
-            <button 
+            <button
+               onClick={()=>{
+                navigate(`/contact`)
+            }} 
               className="w-full px-5 py-2 rounded-lg text-center border bg-[#170C52] hover:bg-[#170C89] transform outline-none transition duration-200 ease-out hover:-translate-y-0.5 text-white font-medium">Contact Us</button>
            </div>
          </div>

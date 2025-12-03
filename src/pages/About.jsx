@@ -1,6 +1,6 @@
 import React from "react";
 import HomeSlider from "../components/Homeslider";
-import Mapp from "../components/mapp";
+import Mapp from "../components/Mapp";
 import img1 from "../assets/aboutImg.webp";
 import img2 from "../assets/aboutImg1.jpg";
 import img3 from "../assets/aboutImg2.jpeg";
