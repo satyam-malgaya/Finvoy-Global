@@ -95,7 +95,7 @@ function Footer() {
                         <FaWhatsapp onClick={()=>{
                               window.open("https://wa.me/7987410249", "_blank");
                         }} className="text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
-                        <FaWhatsapp  className="animate-[rotatePing_1s_linear_infinite] text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
+                        
                 </div>
 
             </div>
