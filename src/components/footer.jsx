@@ -87,7 +87,9 @@ function Footer() {
                         Receive updates, hot deals, discounts delivered
                         straight to your WhatsApp daily.
                     </p>
-                        <FaWhatsapp  className="text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
+                        <FaWhatsapp onClick={()=>{
+                              window.open("https://wa.me/7987410249", "_blank");
+                        }} className="text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
                 </div>
 
             </div>

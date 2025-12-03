@@ -37,9 +37,9 @@ const OurProduct = () => {
          <div
               onMouseEnter={()=>{arrowHandler(0)}}
               onMouseLeave={()=>{arrowLeaveHandler(0)}}
-              className=" flex justify-center"
+              className=" flex justify-center pt-3"
               >
-            <button  className={`lg:w-40 sm:w-45 rounded-lg h-14 px-3 justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
+            <button  className={`lg:w-40 sm:w-45 rounded-lg h-14 px-3  justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
            </div>
       </div>
     </div>

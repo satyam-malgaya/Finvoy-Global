@@ -23,7 +23,7 @@ const EasyLoans = () => {
           hassle-free helping you achieve your dreams faster.
         </p>
         <a
-          href="#"
+          href="https://wa.me/7987410249"
           className="rounded-lg bg-[#170C89] px-5 py-3 text-sm font-semibold transition hover:bg-green-700 sm:text-base"
         >
           Join Us On WhatsApp
