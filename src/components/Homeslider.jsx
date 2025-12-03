@@ -1,12 +1,15 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
+import { useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
 export default function HomeSlider({ slide = [], }) {
+
+  const navigate = useNavigate()
   return (
     <div className="w-full">
     <Swiper
@@ -56,7 +59,9 @@ export default function HomeSlider({ slide = [], }) {
                 {s.title}
               </h2>
               <button
-              
+                onClick={()=>{
+                 navigate('/contact')
+                }}
                 className="
                 hover:-translate-y-1 transform outline-none duration-300 ease-out
                   w-fit 
