@@ -31,7 +31,7 @@ const OurProduct = () => {
             <h1 className="text-3xl font-bold tracking-[1px] sm:text-[40px]">Explore our Products</h1>
             <p className="text-base font-medium text-[#777777] sm:text-[17px]">Discover easy, flexible, and transparent loan solutions designed to meet your financial needs</p>
          </div>
-         <div className='w-full pt-10'>
+         <div className='w-full '>
             <Cards/>
          </div>
          <div

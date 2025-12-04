@@ -9,7 +9,7 @@ const LoanPorduct = () => {
         new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
     <div>
-      <div className="relative w-full min-h-[45vh] overflow-hidden sm:min-h-[55vh] lg:min-h-[70vh]">
+      <div className="relative w-full min-h-[45vh] overflow-hidden sm:min-h-[55vh] lg:min-h-[70vh] pt-20">
         <img
           className="h-[70vh] w-full object-cover object-center"
           src={img}
@@ -28,11 +28,11 @@ const LoanPorduct = () => {
 
       {/* PRODUCT CARDS */}
       <div className="w-full bg-white py-14 px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl  mx-auto">
           {data.loanProducts.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden 
+              className="bg-white  rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden 
               group cursor-pointer transform hover:-translate-y-1 
               animate-fadeUp"
             >

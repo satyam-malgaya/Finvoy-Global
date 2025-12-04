@@ -86,7 +86,7 @@ export default function LoanCalculator() {
   }
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative pt-20">
 
       {/* 🔵 Contact-Style Banner */}
       <div
