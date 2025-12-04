@@ -4,7 +4,7 @@ import styles from "./Navbar.module.css";
 import { IoMdSearch } from "react-icons/io";
 import { RiMenuUnfold2Line } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
-import logo from "/logo.png";
+import logo from "/thirdlogo.png";
 import data from "../data/Data.json";
 
 const Navbar = () => {
@@ -104,7 +104,7 @@ const Navbar = () => {
       <div>
         <img
           onClick={() => navigate("/")}
-          className="animate-[moveLR_1s_ease-in-out_infinite] w-23 h-[15vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain cursor-pointer"
+          className="animate-[moveLR_1s_ease-in-out_infinite] w-28 h-[18vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain cursor-pointer"
           src={logo}
           alt="Logo"
         />
