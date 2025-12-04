@@ -55,7 +55,7 @@ const bankLogos = [
 
 const BankSlider = () => {
   return (
-    <section className="w-full bg-white py-14">
+    <section className="w-full bg-white py-7">
       {/* Heading Section */}
       <div className="mx-auto mb-10 max-w-3xl px-4 text-center">
         <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl lg:text-4xl">

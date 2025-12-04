@@ -80,10 +80,10 @@ const About = () => {
 
 
       <Mapp />
-      <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-10 my-14 px-5 lg:px-20">
+      <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-5 my-14 px-5 lg:px-20">
 
 
-        <div className="bg-white h-[60vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 ">
+        <div className="bg-white h-[56vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 ">
           <img src={logoimg1} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Mission" />
           <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Mission</h1>
           <p className="text-gray-700 mt-2">
@@ -92,7 +92,7 @@ const About = () => {
         </div>
 
 
-        <div className="bg-white h-[63vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+        <div className="bg-white h-[54vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
           <img src={logoimg2} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Vision" />
           <h1 className="text-2xl font-bold text-[#443693] ">Our Vision</h1>
           <p className="text-gray-700 mt-2">
@@ -101,7 +101,7 @@ const About = () => {
         </div>
 
 
-        <div className="bg-white h-[63vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+        <div className="bg-white h-[59vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
           <img src={logoimg3} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Story" />
           <h1 className="text-2xl font-bold text-[#443693] ">Our Story</h1>
           <p className="text-gray-700 mt-2">

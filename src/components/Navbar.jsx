@@ -106,16 +106,16 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`w-full h-20 shadow-2xl flex items-center justify-between px-5 fixed top-0 left-0 bg-white z-50 transition-all duration-500 ${
+    className={`w-full h-22 shadow-2xl flex items-center justify-between  fixed top-0 left-0 bg-white z-50 transition-all duration-500 ${
       showNavbar ? "translate-y-0 opacity-100" : "-translate-y-20 opacity-0"
     }`}
   >
   
       {/* Logo */}
-      <div>
+      <div >
         <img
           onClick={() => navigate("/")}
-          className="animate-[moveLR_1s_ease-in-out_infinite] w-28 h-[18vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-26 object-contain cursor-pointer"
+          className="  animate-[moveLR_1s_ease-in-out_infinite] w-30 h-[20vh] transform transition duration-200 ease-out outline-none hover:-translate-y-1 max-h-30 object-contain cursor-pointer"
           src={logo}
           alt="Logo"
         />
@@ -173,9 +173,9 @@ const Navbar = () => {
       {/* Mobile Menu Button */}
       <button
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="md:hidden text-[28px] text-[#170C52]"
+        className="md:hidden text-[28px] pr-6 text-[#170C52]"
       >
-        {mobileMenuOpen ? <IoClose /> : <RiMenuUnfold2Line />}
+        {mobileMenuOpen ? <IoClose /> : <RiMenuUnfold2Line  />}
       </button>
 
       {/* Mobile Menu */}

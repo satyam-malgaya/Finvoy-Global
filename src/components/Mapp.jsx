@@ -13,8 +13,8 @@ const Mapp = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, [loanId]);
   return (
-    <div className="w-full min-h-[80vh] flex justify-center items-center flex-col gap-8 px-6 py-10 md:py-2 shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
-    <div className="w-full lg:w-[101%] flex flex-col justify-center items-center  h-full">
+    <div className="w-full min-h-[83vh]  flex justify-center items-center flex-col gap-8 px-6 lg:pt-35 pt-10 pb-5 sm:pb-4 lg:pb-5   shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
+    <div className="w-full lg:w-[101%] flex  flex-col justify-center items-center  h-full">
       <div>
       <h1 className="text-black text-3xl font-bold sm:text-[35px]">
         About{" "}<span className="text-[#170C52] tracking-[1px]">Finvoy Global</span>

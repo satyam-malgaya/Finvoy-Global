@@ -106,7 +106,7 @@ export default function LoanCalculator() {
         "
         style={{ backgroundImage: `url(${calculatorImg})` }}
       >
-        <div
+        {/* <div
           className="
             w-[80%] sm:w-[55%] md:w-[40%]
             bg-black/50 
@@ -141,7 +141,7 @@ export default function LoanCalculator() {
           >
             Contact Us
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Main Loan Calculator */}

@@ -42,7 +42,7 @@ const steps = [
 
 const LoanProcess = () => {
   return (
-    <div className="w-full py-16 bg-gray-50 min-h-[96vh]">
+    <div className="w-full py-10 bg-gray-50 min-h-[96vh]">
       {/* Heading */}
       <div className="mb-10 px-4 text-center sm:mb-14">
         <h2 className="text-2xl font-bold text-gray-800 sm:text-3xl lg:text-4xl">
@@ -54,7 +54,7 @@ const LoanProcess = () => {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 gap-5 px-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-6 lg:px-10">
+      <div className="grid grid-cols-2 gap-5 px-4 sm:grid-cols-2 md:grid-cols-3 sm:gap-6 lg:px-10">
         {steps.map((step, index) => (
           <motion.div
             key={step.id}

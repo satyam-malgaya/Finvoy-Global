@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "/logo.png";
+import logo from "/thirdlogo.png";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className="flex flex-col bg-[#170C52] text-white py-10">
+        <div className="flex flex-col bg-[#170C52] text-white ">
 
             {/* MAIN FOOTER GRID */}
             <div className=" grid px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 
@@ -19,7 +19,7 @@ function Footer() {
                 <div className="flex flex-col gap-3">
                     <NavLink to="/">
                         <img
-                            className="animate-[moveLR_1s_ease-in-out_infinite] invert brightness-50 saturate-0 w-36 text-white sm:w-40 h-[18vh] object-contain "
+                            className="animate-[moveLR_1s_ease-in-out_infinite] w-36  sm:w-40 h-[18vh] object-contain "
                             src={logo}
                             alt="Logo"
                         />

@@ -9,10 +9,12 @@ import img3 from "../assets/wix-loan.png";
 import EasyLoans from "../components/EasyLoans";
 import LoanProcess from "../components/LoanProcess";
 import BankSlider from "../components/BankSlider";
+import img4 from '../assets/gimg.jpg'
 const slides = [
   { url: img1, title: "Affordable Home Loans", subtitle: "Low interest rates" },
   { url: img2, title: "Quick Approval", subtitle: "Fast and simple" },
   { url: img3, title: "Expert Guidance", subtitle: "Best loan advisors" },
+  { url: img4, title: "Expert Guidance", subtitle: "Loan Approved" },
 ];
 
 const Home = () => {

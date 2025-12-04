@@ -9,14 +9,14 @@ const LoanPorduct = () => {
         new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
     <div>
-      <div className="relative w-full min-h-[45vh] overflow-hidden sm:min-h-[55vh] lg:min-h-[70vh] pt-20">
+      <div className="relative w-full min-h-[45vh] overflow-hidden sm:min-h-[37vh] lg:min-h-[70vh] pt-23">
         <img
-          className="h-[70vh] w-full object-cover object-center"
+          className="h-[40vh] w-full object-cover object-center"
           src={img}
           alt="Sorry the image is not showing"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 text-center">
+        <div className="absolute inset-0 top-15 flex flex-col items-center justify-center gap-4 px-8 text-center">
           <h1 className="text-3xl font-bold text-white drop-shadow-lg sm:text-4xl lg:text-5xl">
             Our Product
           </h1>
@@ -50,7 +50,7 @@ const LoanPorduct = () => {
                   {item.title}
                 </h2>
 
-                <div className="flex gap-4">
+                <div className="flex justify-between">
                   <Link 
                   to={`/loan/${item.id}`}
                   className="rounded border border-[#170C52] px-4 py-2 text-sm font-medium text-[#170C52] transition transform outline-none duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#170C52] hover:text-white"   >
@@ -61,7 +61,7 @@ const LoanPorduct = () => {
                   onClick={()=>{
                     navigate('/contact')
                   }}
-                  className="w-1/2 py-2 rounded-md bg-[#170C52] text-white font-medium hover:bg-[#0e0636] transition-all duration-300">
+                  className="px-4 py-[10px]  rounded-md bg-[#170C52] text-white text-sm font-medium hover:bg-[#0e0636] transition-all duration-300">
                     APPLY NOW
                   </button>
                 </div>

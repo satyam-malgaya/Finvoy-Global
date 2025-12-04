@@ -25,7 +25,7 @@ const OurProduct = () => {
     setishover(false)
   }
   return (
-    <div className="w-full bg-white px-2 py-10 sm:px-10 sm:py-14 lg:px-20">
+    <div className="w-full bg-white px-2 py-5 sm:px-10 sm:py-5 lg:px-20">
       <div className="w-full h-auto">
          <div className="w-full flex flex-col items-center justify-center text-center gap-4">
             <h1 className="text-3xl font-bold tracking-[1px] sm:text-[40px]">Explore our Products</h1>

@@ -9,7 +9,7 @@ const Cards = () => {
       {data.loanProducts.map((loan, index) => (
         <div
           key={index}
-          className="flex h-130 w-full flex-col overflow-hidden rounded-lg border border-black/10 shadow-md"
+          className="flex h-112 w-full flex-col overflow-hidden rounded-lg border border-black/10 shadow-md"
         >
           <img
             src={resolveImage(loan.image)}
@@ -22,7 +22,7 @@ const Cards = () => {
             </h3>
             <p className="text-sm text-gray-600">{loan.shortDescription}</p>
             <p className="text-sm text-gray-500">{loan.details}</p>
-            <div className="mt-auto flex flex-wrap justify-between gap-3">
+            <div className="pt-3 flex flex-wrap justify-between gap-3">
               <Link
                 to={`/loan/${loan.id}`}
                 className="rounded border border-[#170C52] px-4 py-2 text-sm font-medium text-[#170C52] transition transform outline-none duration-200 ease-out hover:-translate-y-0.5 hover:bg-[#170C52] hover:text-white"
