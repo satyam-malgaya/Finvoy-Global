@@ -50,6 +50,17 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [mobileMenuOpen]);
   
   
   
@@ -169,56 +180,59 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-20 left-0 w-full bg-white shadow-2xl z-50 md:hidden">
-          <div className="flex flex-col px-5 py-4 gap-2">
-            <NavLink to="/" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>Home</NavLink>
-            <NavLink to="/loan-products" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>LoanProduct</NavLink>
-            <NavLink to="/about" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>About</NavLink>
-            <NavLink to="/contact" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-            <NavLink to="/loan-calculator" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>Loan Calculator</NavLink>
+  <div className="fixed top-20 left-0 w-full h-[calc(100vh-80px)] overflow-hidden bg-white shadow-2xl z-[9999] md:hidden">
+    <div className="flex flex-col px-5 py-4 gap-2 overflow-y-auto">
 
-            {/* Mobile Search */}
-            <div className="relative mt-2">
-              <form onSubmit={handleSearchSubmit} className="relative flex items-center">
-                <input
-                  value={searchTerm}
-                  onChange={(e) => handleInputChange(e.target.value)}
-                  className="w-full rounded-full bg-[#170C52] px-4 py-2 pr-10 text-white"
-                  type="search"
-                  placeholder="Search loan..."
-                />
-                <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white" />
-              </form>
+      <NavLink to="/" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>Home</NavLink>
+      <NavLink to="/loan-products" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>LoanProduct</NavLink>
+      <NavLink to="/about" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>About</NavLink>
+      <NavLink to="/contact" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
+      <NavLink to="/loan-calculator" className={styles.navlink} onClick={() => setMobileMenuOpen(false)}>Loan Calculator</NavLink>
 
-              {suggestions.length > 0 && (
-                <ul className="absolute top-14 left-0 w-full bg-white text-black rounded-lg shadow-xl max-h-60 overflow-y-auto z-50">
-                  {suggestions.map((item) => (
-                    <li
-                      key={item.id}
-                      onClick={() => {
-                        navigate(`/loan/${item.id}`);
-                        setSearchTerm("");
-                        setSuggestions([]);
-                        setMobileMenuOpen(false);
-                      }}
-                      className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
-                    >
-                      {item.title}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
+      {/* Mobile Search */}
+      <div className="relative mt-2">
+        <form onSubmit={handleSearchSubmit} className="relative flex items-center">
+          <input
+            value={searchTerm}
+            onChange={(e) => handleInputChange(e.target.value)}
+            className="w-full rounded-full bg-[#170C52] px-4 py-2 pr-10 text-white"
+            type="search"
+            placeholder="Search loan..."
+          />
+          <IoMdSearch className="pointer-events-none absolute right-4 text-[20px] text-white" />
+        </form>
 
-            <button
-              onClick={() => navigate("/contact")}
-              className="w-full px-5 py-2 rounded-lg bg-[#170C52] text-white"
-            >
-              Contact Us
-            </button>
-          </div>
-        </div>
-      )}
+        {suggestions.length > 0 && (
+          <ul className="absolute top-14 left-0 w-full bg-white text-black rounded-lg shadow-xl max-h-60 overflow-y-auto z-[99999]">
+            {suggestions.map((item) => (
+              <li
+                key={item.id}
+                onClick={() => {
+                  navigate(`/loan/${item.id}`);
+                  setSearchTerm("");
+                  setSuggestions([]);
+                  setMobileMenuOpen(false);
+                }}
+                className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              >
+                {item.title}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <button
+        onClick={() => navigate("/contact")}
+        className="w-full px-5 py-2 rounded-lg bg-[#170C52] text-white"
+      >
+        Contact Us
+      </button>
+
+    </div>
+  </div>
+)}
+
     </nav>
   );
 };
