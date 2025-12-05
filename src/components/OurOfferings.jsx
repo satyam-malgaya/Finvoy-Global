@@ -11,8 +11,8 @@ const OurOfferings = () => {
         h1:'Investments'
       },
       {
-        img:'https://www.vinayakafinserv.com/media/images/17777592_Npm084m.png',
-        h1:'Wealth Management'
+        img:'https://www.vinayakafinserv.com/media/images/4318299_E9eyDE1.png',
+        h1:'Credit Solutions'
       },
       {
         img:'https://www.vinayakafinserv.com/media/images/6454277_BFIQeHB.png',
@@ -23,8 +23,9 @@ const OurOfferings = () => {
         h1:'Tax & Retirement Planning'
       },
       {
-        img:'https://www.vinayakafinserv.com/media/images/4318299_E9eyDE1.png',
-        h1:'Credit Solutions'
+       
+         img:'https://www.vinayakafinserv.com/media/images/17777592_Npm084m.png',
+        h1:'Wealth Management'
       }
         
     ]
@@ -40,7 +41,7 @@ const OurOfferings = () => {
           Explore our hassle-free Loan & Finance Solutions tailored to your needs
         </p>
       </div>
-      <div className="mt-8 flex w-full flex-wrap items-center justify-center gap-6 px-4 sm:gap-8 sm:px-6 lg:gap-10 lg:px-10">
+      <div className="mt-8 grid grid-cols-2 w-full  items-center justify-center gap-6 px-4 sm:gap-8 sm:px-6 lg:gap-10 lg:px-10">
         {cardata.map((item, index) => {
           return (
             <div

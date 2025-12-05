@@ -84,7 +84,7 @@ const About = () => {
 
 {/* CARD 1 */}
 <div className="bg-white w-full sm:w-[45%] lg:w-[25%] p-6 text-center 
-  border border-gray-50 rounded-lg shadow-xl hover:scale-105 
+  border border-gray-50 rounded-lg  hover:scale-105 
   transition-transform duration-300 flex flex-col items-center">
   
   <img src={logoimg1} className="animate-bounce h-28 mx-auto mt-3" alt="Our Mission" />
@@ -98,7 +98,7 @@ const About = () => {
 
 {/* CARD 2 */}
 <div className="bg-white w-full sm:w-[45%] lg:w-[25%] p-6 text-center 
-  border border-gray-50 rounded-lg shadow-xl hover:scale-105 
+  border border-gray-50 rounded-lg  hover:scale-105 
   transition-transform duration-300 flex flex-col items-center">
   
   <img src={logoimg2} className="animate-bounce h-28 mx-auto mt-3" alt="Our Vision" />
@@ -112,7 +112,7 @@ const About = () => {
 
 {/* CARD 3 */}
 <div className="bg-white w-full sm:w-[45%] lg:w-[25%] p-6 text-center 
-  border border-gray-50 rounded-lg shadow-xl hover:scale-105 
+  border border-gray-50 rounded-lg  hover:scale-105 
   transition-transform duration-300 flex flex-col items-center">
   
   <img src={logoimg3} className="animate-bounce h-28 mx-auto mt-3" alt="Our Story" />
