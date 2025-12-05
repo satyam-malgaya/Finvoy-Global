@@ -41,7 +41,7 @@ const OurOfferings = () => {
           Explore our hassle-free Loan & Finance Solutions tailored to your needs
         </p>
       </div>
-      <div className="mt-8 grid grid-cols-2 w-full  items-center justify-center gap-6 px-4 sm:gap-8 sm:px-6 lg:gap-10 lg:px-10">
+      <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 w-full  items-center justify-center gap-6 px-4 sm:gap-8 sm:px-6 lg:gap-10 lg:px-10">
         {cardata.map((item, index) => {
           return (
             <div
