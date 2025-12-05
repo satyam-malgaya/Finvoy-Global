@@ -82,34 +82,51 @@ const About = () => {
       <Mapp />
       <div className="flex flex-col lg:flex-row flex-wrap justify-center gap-5 my-14 px-5 lg:px-20">
 
+{/* CARD 1 */}
+<div className="bg-white w-full sm:w-[45%] lg:w-[25%] p-6 text-center 
+  border border-gray-50 rounded-lg shadow-xl hover:scale-105 
+  transition-transform duration-300 flex flex-col items-center">
+  
+  <img src={logoimg1} className="animate-bounce h-28 mx-auto mt-3" alt="Our Mission" />
+  <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Mission</h1>
+  <p className="text-gray-700 mt-2 text-sm md:text-base leading-relaxed">
+    To simplify access to financial services by offering transparent, 
+    reliable, and customized loan solutions. We aim to empower individuals 
+    and businesses to achieve their goals with confidence and ease.
+  </p>
+</div>
 
-        <div className="bg-white h-[56vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300 ">
-          <img src={logoimg1} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Mission" />
-          <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Mission</h1>
-          <p className="text-gray-700 mt-2">
-            To simplify access to financial services by offering transparent, reliable, and customized loan solutions. We aim to empower individuals and businesses to achieve their goals with confidence and ease.
-          </p>
-        </div>
+{/* CARD 2 */}
+<div className="bg-white w-full sm:w-[45%] lg:w-[25%] p-6 text-center 
+  border border-gray-50 rounded-lg shadow-xl hover:scale-105 
+  transition-transform duration-300 flex flex-col items-center">
+  
+  <img src={logoimg2} className="animate-bounce h-28 mx-auto mt-3" alt="Our Vision" />
+  <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Vision</h1>
+  <p className="text-gray-700 mt-2 text-sm md:text-base leading-relaxed">
+    To be the most trusted financial partner, connecting people with leading 
+    banks and institutions, and ensuring easy, affordable, and stress-free 
+    loan approvals for every client we serve.
+  </p>
+</div>
 
+{/* CARD 3 */}
+<div className="bg-white w-full sm:w-[45%] lg:w-[25%] p-6 text-center 
+  border border-gray-50 rounded-lg shadow-xl hover:scale-105 
+  transition-transform duration-300 flex flex-col items-center">
+  
+  <img src={logoimg3} className="animate-bounce h-28 mx-auto mt-3" alt="Our Story" />
+  <h1 className="text-2xl font-bold text-[#443693] mt-4">Our Story</h1>
+  <p className="text-gray-700 mt-2 text-sm md:text-base leading-relaxed">
+    Vinayaka Finserv was founded with a vision to make finance simple and 
+    accessible. With years of experience and strong banking partnerships, 
+    we have helped countless clients secure loans and achieve their dreams 
+    through trust, integrity, and personalized service.
+  </p>
+</div>
 
-        <div className="bg-white h-[54vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-          <img src={logoimg2} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Vision" />
-          <h1 className="text-2xl font-bold text-[#443693] ">Our Vision</h1>
-          <p className="text-gray-700 mt-2">
-            To be the most trusted financial partner, connecting people with leading banks and institutions, and ensuring easy, affordable, and stress-free loan approvals for every client we serve.
-          </p>
-        </div>
+</div>
 
-
-        <div className="bg-white h-[59vh] w-full sm:w-[45%] lg:w-[25%] px-6 text-center border border-gray-50 rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
-          <img src={logoimg3} className="animate-bounce h-[18vh] mx-auto mt-9" alt="Our Story" />
-          <h1 className="text-2xl font-bold text-[#443693] ">Our Story</h1>
-          <p className="text-gray-700 mt-2">
-            Vinayaka Finserv was founded with a vision to make finance simple and accessible. With years of experience and strong banking partnerships, we have helped countless clients secure loans and achieve their dreams through trust, integrity, and personalized service.
-          </p>
-        </div>
-
-      </div>
 
     </div>
   );

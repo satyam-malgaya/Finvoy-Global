@@ -22,13 +22,14 @@ const Home = () => {
  const navigate=useNavigate()
   return (
     <div>
-      <div className="fixed bottom-5 left-30 text-center ">
-        <button 
-        onClick={()=>{
-          navigate('/contact')
-        }}
-        className="py-3 px-5 bg-[#170C52] rounded-sm text-white">Contact Us</button>
-      </div>
+   <div className="fixed bottom-5 left-1/2 -translate-x-1/2 text-center">
+  <button
+    onClick={() => navigate("/contact")}
+    className="py-3 px-5 bg-[#170C52] rounded-sm text-white"
+  >
+    Contact Us
+  </button>
+</div>
       <div className="relative w-full sm:h-[40vh] md:h-[60vh] lg:h-[75vh]">
         <HomeSlider slide={slides}  />
       </div>
