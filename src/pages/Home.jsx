@@ -16,11 +16,20 @@ const slides = [
   { url: img3, title: "Expert Guidance", subtitle: "Best loan advisors" },
   { url: img4, title: "Expert Guidance", subtitle: "Loan Approved" },
 ];
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+ const navigate=useNavigate()
   return (
     <div>
-      <div className="w-full sm:h-[40vh] md:h-[60vh] lg:h-[75vh]">
+      <div className="fixed bottom-5 left-30 text-center ">
+        <button 
+        onClick={()=>{
+          navigate('/contact')
+        }}
+        className="py-3 px-5 bg-[#170C52] rounded-sm text-white">Contact Us</button>
+      </div>
+      <div className="relative w-full sm:h-[40vh] md:h-[60vh] lg:h-[75vh]">
         <HomeSlider slide={slides}  />
       </div>
       {/* section-2........ */}

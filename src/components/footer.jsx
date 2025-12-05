@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
     return (
-        <div className="flex flex-col bg-[#170C52] text-white ">
+        <div className="flex flex-col lg:pt-10 bg-[#170C52] text-white ">
 
             {/* MAIN FOOTER GRID */}
             <div className=" grid px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 
@@ -19,7 +19,7 @@ function Footer() {
                 <div className="flex flex-col gap-3">
                     <NavLink to="/">
                         <img
-                            className="animate-[moveLR_1s_ease-in-out_infinite] w-36  sm:w-40 h-[18vh] object-contain "
+                            className="animate-[moveLR_1s_ease-in-out_infinite] w-45 sm:w-40 lg:h-[24vh] sm:h-[22vh] object-contain "
                             src={logo}
                             alt="Logo"
                         />
