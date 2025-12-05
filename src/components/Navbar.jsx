@@ -106,7 +106,7 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`w-full h-22 shadow-2xl flex items-center justify-between  fixed top-0 left-0 bg-white z-50 transition-all duration-500 ${
+    className={`w-full h-22 shadow-2xl flex pr-3 items-center justify-between  fixed top-0 left-0 bg-white z-50 transition-all duration-500 ${
       showNavbar ? "translate-y-0 opacity-100" : "-translate-y-20 opacity-0"
     }`}
   >
@@ -223,11 +223,15 @@ const Navbar = () => {
       </div>
 
       <button
-        onClick={() => navigate("/contact")}
-        className="w-full px-5 py-2 rounded-lg bg-[#170C52] text-white"
-      >
-        Contact Us
-      </button>
+  onClick={() => {
+    navigate("/contact");
+    setMobileMenuOpen(false); // Hide mobile menu after navigation
+  }}
+  className="w-full px-5 py-2 rounded-lg bg-[#170C52] text-white"
+>
+  Contact Us
+</button>
+
 
     </div>
   </div>

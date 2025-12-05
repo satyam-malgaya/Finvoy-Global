@@ -14,13 +14,13 @@
 
 @keyframes moveLR {
     0% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
     50% {
-        transform: translateX(4px);
+        transform: translateY(4px);
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 

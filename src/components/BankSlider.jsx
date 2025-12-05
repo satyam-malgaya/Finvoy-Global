@@ -68,7 +68,7 @@ const BankSlider = () => {
       </div>
 
       {/* Slider Section */}
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-6xl px-4 sm:px-4 lg:px-6">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={false}
@@ -87,9 +87,9 @@ const BankSlider = () => {
           {bankLogos.map((bank) => (
             <SwiperSlide
               key={bank.id}
-              className="flex items-center justify-center"
+              className="flex items-center m-2 justify-center"
             >
-              <div className="flex border-1 border-[#4A5565] h-24 w-full max-w-[180px] items-center justify-center rounded-2xl bg-white/80 p-3 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg sm:h-28 sm:max-w-[200px]">
+              <div className="flex border-1 border-[#4A5565] h-32 w-full max-w-[170px] items-center justify-center rounded-2xl bg-white/80 p-3 shadow-sm ring-1 ring-gray-100 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg sm:h-25 sm:max-w-[200px]">
                 <img
                   src={bank.img}
                   alt="Bank Logo"
