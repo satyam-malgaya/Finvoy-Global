@@ -11,7 +11,7 @@ export default function HomeSlider({ slide = [], }) {
 
   const navigate = useNavigate()
   return (
-    <div className="w-full pt-20">
+    <div className="w-full pt-16">
     <Swiper
       modules={[Autoplay, Pagination, Navigation]}
       autoplay={{ delay: 3500 }}

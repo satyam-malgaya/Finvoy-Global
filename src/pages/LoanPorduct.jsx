@@ -9,7 +9,7 @@ const LoanPorduct = () => {
         new URL(`../assets/${imageName}`, import.meta.url).href;
   return (
     <div>
-      <div className="relative w-full min-h-[45vh] overflow-hidden sm:min-h-[37vh] lg:min-h-[70vh] pt-23">
+      <div className="relative w-full min-h-[45vh] overflow-hidden sm:min-h-[37vh] lg:min-h-[70vh] pt-16">
         <img
           className="h-[40vh] w-full object-cover object-center"
           src={img}

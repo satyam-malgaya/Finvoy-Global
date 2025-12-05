@@ -15,7 +15,7 @@ const Mapp = () => {
   return (
     <div className="w-full min-h-[83vh]  flex justify-center items-center flex-col gap-8 px-6 lg:pt-35 pt-10 pb-5 sm:pb-4 lg:pb-5   shadow-2xl md:px-10 lg:min-h-[80vh] lg:flex-row">
     <div className="w-full lg:w-[101%] flex  flex-col justify-center items-center  h-full">
-      <div className='pb-4'>
+      <div className='pb-7'>
       <h1 className="text-black tracking-[1px] text-3xl font-bold sm:text-[35px]">
         About{" "}<span className="text-[#170C52] tracking-[1px]">Finvoy Global</span>
       </h1>

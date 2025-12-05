@@ -32,7 +32,7 @@ const OurOfferings = () => {
     
   return (
   <div className="w-full py-5">
-      <div className="w-full flex flex-col items-center justify-center text-center gap-2 px-4">
+      <div className="w-full flex pb-5 flex-col items-center justify-center text-center gap-2 px-4">
         <h1 className="text-2xl font-medium tracking-[1px] sm:text-[32px]">
           Our Offerings
         </h1>

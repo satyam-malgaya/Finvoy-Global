@@ -9,7 +9,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <div className="w-full relative pt-20">
+    <div className="w-full relative pt-16">
       {/* Banner Section with Overlay */}
       <div
         className="
