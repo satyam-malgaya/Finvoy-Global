@@ -34,36 +34,35 @@ const Mapp = () => {
           />
         </div>
 
-        <div className="flex flex-col pt-6 lg:px-15 sm:px-2 items-center justify-center gap-5 text-base leading-relaxed sm:text-lg lg:gap-6">
-          <p>
-            At <b>Finvoy Global</b>, we are dedicated to making finance simple,
-            accessible, and stress-free. With our strong network of leading
-            banks and financial institutions, we help you secure the right loan
-            with ease and transparency.
-          </p>
-          <p>
-            Whether it’s a home loan, personal loan, business loan, or any other
-            financial need, our team ensures quick processing, minimal
-            documentation, and the best interest rates tailored to your
-            requirements. We focus on providing solutions that truly match your
-            goals.
-          </p>
-          <p>
-            Our mission is to support you at every step of your financial
-            journey — from guiding you through the application process to
-            ensuring smooth approvals. With expert advice, trusted guidance, and
-            hassle-free services,<b>Finvoy Global</b> is your reliable partner
-            in achieving financial freedom.
-          </p>
-          <button
-            onClick={() => {
-              navigate("/contact");
-            }}
-            className="w-full sm:w-40 h-13 transform transition duration-200 ease-out outline-none hover:-translate-y-1 rounded-sm text-white font-medium bg-[#170C52]"
-          >
-            Contact Now
-          </button>
-        </div>
+        <div className="flex flex-col pt-6 px-1 lg:px-20 items-center justify-center gap-5 text-base sm:text-base lg:text-base leading-7 sm:leading-7 lg:leading-7 max-w-3xl text-justify">
+  <p>
+    At <b>Finvoy Global</b>, we are dedicated to making finance simple,
+    accessible, and stress-free. With our strong network of leading banks
+    and financial institutions, we help you secure the right loan with
+    ease and transparency.
+  </p>
+  <p>
+    Whether it’s a home loan, personal loan, business loan, or any other
+    financial need, our team ensures quick processing, minimal
+    documentation, and the best interest rates tailored to your
+    requirements. We focus on providing solutions that truly match your
+    goals.
+  </p>
+  <p>
+    Our mission is to support you at every step of your financial journey —
+    from guiding you through the application process to ensuring smooth
+    approvals. With expert advice, trusted guidance, and hassle-free
+    services, <b>Finvoy Global</b> is your reliable partner in achieving
+    financial freedom.
+  </p>
+  <button
+    onClick={() => navigate("/contact")}
+    className="w-full sm:w-40 h-12 mt-4 transform transition duration-200 ease-out hover:-translate-y-1 rounded-sm text-white font-medium bg-[#170C52]"
+  >
+    Contact Now
+  </button>
+</div>
+
       </div>
     </div>
   );

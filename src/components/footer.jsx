@@ -3,8 +3,9 @@ import logo from "/thirdlogo.png";
 import { FaLocationDot, FaPhone } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube  } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+
 
 function Footer() {
     return (
@@ -51,6 +52,12 @@ function Footer() {
                         <a href="https://Instagram.com" target="_blank">
                         <FaInstagram className="animate-[rotatePing_1s_linear_infinite] text-pink-600 text-2xl hover:text-pink-700 cursor-pointer" />
                         </a>
+                        <a href="https://www.twitter.com" target="_blank">
+                        < FaTwitter className="animate-[rotatePing_1s_linear_infinite] text-blue-600 text-2xl hover:text-blue-700 cursor-pointer" />
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                        <FaYoutube className="animate-[rotatePing_1s_linear_infinite] text-red-600 text-2xl hover:text-blue-700 cursor-pointer" />
+                        </a>
                     </div>
                 </div>
 
@@ -87,15 +94,17 @@ function Footer() {
 
                 
                 <div className="flex flex-col gap-3">
+                    <div className="flex gap-15">
                     <p className="font-semibold uppercase mb-1 text-white underline">Join Us on WhatsApp</p>
+                     <FaWhatsapp onClick={()=>{
+                              window.open("https://wa.me/7987410249", "_blank");
+                     }} className=" animate-[rotatePing_1s_linear_infinite] text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
+                    </div>
                     <p className="text-sm leading-5">
                         Receive updates, hot deals, discounts delivered
                         straight to your WhatsApp daily.
                     </p>
-                        <FaWhatsapp onClick={()=>{
-                              window.open("https://wa.me/7987410249", "_blank");
-                        }} className=" animate-[rotatePing_1s_linear_infinite] text-green-600 text-2xl hover:text-green-700 cursor-pointer" />
-                </div>
+              </div>
 
             </div>
 

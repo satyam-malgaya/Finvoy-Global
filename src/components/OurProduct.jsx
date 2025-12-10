@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { GoArrowUpRight } from "react-icons/go";
 
 const OurProduct = () => {
+   const [showAll, setShowAll] = useState(false);
   const [ishover, setishover] = useState(Array(3).fill(false));
   const arrowHandler = (index) => {
     const newstate = [...ishover];
@@ -25,22 +26,49 @@ const OurProduct = () => {
     setishover(false)
   }
   return (
-    <div className="w-full bg-white px-2 py-5 sm:px-10 sm:py-5 lg:px-20">
+   <div className="w-full bg-white px-2 py-5 sm:px-10 sm:py-5 lg:px-20">
       <div className="w-full h-auto">
-         <div className="w-full flex flex-col items-center justify-center text-center gap-4">
-            <h1 className="text-3xl font-bold tracking-[1px] sm:text-[40px]">Explore our Products</h1>
-            <p className="text-base font-medium text-[#777777] sm:text-[17px]">Discover easy, flexible, and transparent loan solutions designed to meet your financial needs</p>
-         </div>
-         <div className='w-full '>
-            <Cards/>
-         </div>
-         <div
-              onMouseEnter={()=>{arrowHandler(0)}}
-              onMouseLeave={()=>{arrowLeaveHandler(0)}}
-              className=" flex justify-center pt-3"
-              >
-            <button  className={`lg:w-40 sm:w-45 rounded-lg h-14 px-3  justify-center gap-2 text-[16px] text-white flex items-center ${ishover[0] ?'-translate-y-1 bg-[#0f0637]':'bg-[#170C52]'} transition duration-200 ease-out`}>Explore Mores <span><GoArrowUpRight className={`${ishover[0] ? 'rotate-45':''} transition duration-300`} size={20} /></span></button>
-           </div>
+        {/* Heading */}
+        <div className="w-full flex flex-col items-center justify-center text-center gap-4">
+          <h1 className="text-3xl font-bold tracking-[1px] sm:text-[40px]">
+            Explore our Products
+          </h1>
+          <p className="text-base font-medium text-[#777777] sm:text-[17px]">
+            Discover easy, flexible, and transparent loan solutions designed to
+            meet your financial needs
+          </p>
+        </div>
+
+        {/* Cards container */}
+        <div className={`w-full overflow-hidden transition-all duration-500 ${showAll ? 'max-h-full' : 'max-h-[500px]'}`}>
+          <Cards />
+        </div>
+
+        {/* Explore More Button */}
+        <div
+          onMouseEnter={() => {
+            arrowHandler(0);
+          }}
+          onMouseLeave={() => {
+            arrowLeaveHandler(0);
+          }}
+          className="flex justify-center pt-3"
+        >
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className={`lg:w-40 sm:w-45 rounded-lg h-14 px-3 justify-center gap-2 text-[16px] text-white flex items-center transform transition duration-200 ease-out ${
+              ishover[0] ? "-translate-y-1 bg-[#0f0637]" : "bg-[#170C52]"
+            }`}
+          >
+            {showAll ? "Show Less" : "Explore More"}{" "}
+            <span>
+              <GoArrowUpRight
+                className={`${ishover[0] ? "rotate-45" : ""} transition duration-300`}
+                size={20}
+              />
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   )
